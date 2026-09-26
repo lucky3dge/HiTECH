@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiTECH Services</title>
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="header-inner">
+
+      <!-- LEFT: Nav links -->
+      <nav class="header-nav">
+        <a href="product.html">Products</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="uiuxdesign.html">UI/UXDesign</a>
+        <a href="tech.html">Tech</a>
+      </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<nav class="mobile-menu" id="mobileMenu">
+
+    <a href="product.html"><i class="fas fa-box"></i><span>Products</span></a>
+
+    <a href="service.html"><i class="fas fa-cogs"></i><span>Services</span></a>
+
+    <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+
+    <a href="uiuxdesign.html"><i class="fas fa-palette"></i><span>UI/UXDesign</span></a>
+
+    <a href="tech.html"><i class="fas fa-info-circle"></i><span>Tech</span></a>
+
+</nav>
+
+      <div class="menu-overlay" id="menuOverlay"></div>
+
+      <!-- CENTER: Logo -->
+<div class="header-logo">
+    <a href="./index.html" class="hitech-logo-link" aria-label="Home">
+        <img src="./img/HiTECH.png" alt="HiTECH" class="logo-img">
+    </a>
+</div>
+
+      <!-- RIGHT: Language -->
+      <div class="header-right">
+        <button class="lang-btn" id="langBtn" onclick="toggleLang()">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="1"/>
+            <ellipse cx="7.5" cy="7.5" rx="2.8" ry="6.5" stroke="currentColor" stroke-width="1"/>
+            <line x1="1" y1="5.5" x2="14" y2="5.5" stroke="currentColor" stroke-width="1"/>
+            <line x1="1" y1="9.5" x2="14" y2="9.5" stroke="currentColor" stroke-width="1"/>
+          </svg>
+          <span id="currentLang">EN</span>
+          <svg class="chev" viewBox="0 0 9 9" fill="none" width="9" height="9">
+            <polyline points="1.5,3 4.5,6.5 7.5,3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="lang-menu" id="langMenu">
+          <a href="#" class="active" onclick="selectLang(event,'EN')">🌐 Global · English</a>
+          <a href="#" onclick="selectLang(event,'中文')">🇨🇳 China · 简体中文</a>
+          <a href="#" onclick="selectLang(event,'FR')">🇫🇷 France · Français</a>
+          <a href="#" onclick="selectLang(event,'DE')">🇩🇪 Germany · Deutsch</a>
+          <a href="#" onclick="selectLang(event,'AR')">🇸🇦 Arabic · العربية</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+     HiTECH — PREMIUM SERVICES & ORDER SECTION
+     HTML
+============================================================ -->
+
+<section class="hitech-order-section" id="hitech-order">
+
+    <!-- Decorative background elements -->
+    <div class="hitech-order-bg-shape hitech-order-bg-shape-one"></div>
+    <div class="hitech-order-bg-shape hitech-order-bg-shape-two"></div>
+    <div class="hitech-order-grid-pattern"></div>
+
+    <div class="hitech-order-container">
+
+        <!-- =====================================================
+             INTRODUCTION
+        ====================================================== -->
+
+        <header class="hitech-order-header hitech-order-reveal">
+
+            <span class="hitech-order-eyebrow">
+                OUR SERVICES
+            </span>
+
+            <h2 class="hitech-order-title">
+                What Can We
+                <span>Help You With?</span>
+            </h2>
+
+            <p class="hitech-order-intro">
+                From global sourcing and RMB exchange to digital
+                technology solutions, choose the service you need
+                and get started in a few simple steps.
+            </p>
+
+        </header>
+
+
+        <!-- =====================================================
+             SERVICE SELECTOR
+        ====================================================== -->
+
+        <div class="hitech-order-services">
+
+            <!-- Procurement -->
+            <button
+                type="button"
+                class="hitech-order-service-card hitech-order-reveal hitech-order-service-active"
+                data-service="procurement"
+            >
+
+                <span class="hitech-order-card-number">
+                    01
+                </span>
+
+                <span class="hitech-order-card-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 21h18M5 21V9h14v12M8 9V5h8v4M9 13h2M13 13h2M9 17h2M13 17h2"/>
+                    </svg>
+                </span>
+
+                <span class="hitech-order-card-content">
+
+                    <strong>
+                        Procurement
+                    </strong>
+
+                    <small>
+                        Machinery, vehicles, equipment,
+                        electronics and more.
+                    </small>
+
+                </span>
+
+                <span class="hitech-order-card-footer">
+
+                    <span>
+                        Select
+                    </span>
+
+                    <span class="hitech-order-card-arrow">
+                        ↗
+                    </span>
+
+                </span>
+
+                <span class="hitech-order-card-check">
+                    ✓
+                </span>
+
+            </button>
+
+
+            <!-- Product Sourcing -->
+            <button
+                type="button"
+                class="hitech-order-service-card hitech-order-reveal"
+                data-service="sourcing"
+            >
+
+                <span class="hitech-order-card-number">
+                    02
+                </span>
+
+                <span class="hitech-order-card-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"/>
+                        <path d="m16.5 16.5 4 4"/>
+                    </svg>
+                </span>
+
+                <span class="hitech-order-card-content">
+
+                    <strong>
+                        Product Sourcing
+                    </strong>
+
+                    <small>
+                        Product discovery, supplier sourcing
+                        and procurement assistance.
+                    </small>
+
+                </span>
+
+                <span class="hitech-order-card-footer">
+
+                    <span>
+                        Select
+                    </span>
+
+                    <span class="hitech-order-card-arrow">
+                        ↗
+                    </span>
+
+                </span>
+
+                <span class="hitech-order-card-check">
+                    ✓
+                </span>
+
+            </button>
+
+
+            <!-- RMB Exchange -->
+            <button
+                type="button"
+                class="hitech-order-service-card hitech-order-reveal"
+                data-service="rmb"
+            >
+
+                <span class="hitech-order-card-number">
+                    03
+                </span>
+
+                <span class="hitech-order-card-icon">
+                    <span class="hitech-order-yuan">
+                        ¥
+                    </span>
+                </span>
+
+                <span class="hitech-order-card-content">
+
+                    <strong>
+                        RMB Exchange
+                    </strong>
+
+                    <small>
+                        Buy or sell Chinese Yuan
+                        using Nigerian Naira.
+                    </small>
+
+                </span>
+
+                <span class="hitech-order-card-footer">
+
+                    <span>
+                        Select
+                    </span>
+
+                    <span class="hitech-order-card-arrow">
+                        ↗
+                    </span>
+
+                </span>
+
+                <span class="hitech-order-card-check">
+                    ✓
+                </span>
+
+            </button>
+
+
+            <!-- Web Development -->
+            <button
+                type="button"
+                class="hitech-order-service-card hitech-order-reveal"
+                data-service="web"
+            >
+
+                <span class="hitech-order-card-number">
+                    04
+                </span>
+
+                <span class="hitech-order-card-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3" y="4" width="18" height="16" rx="2"/>
+                        <path d="M3 8h18M8 12l-2 2 2 2M12 16h4"/>
+                    </svg>
+                </span>
+
+                <span class="hitech-order-card-content">
+
+                    <strong>
+                        Web Development
+                    </strong>
+
+                    <small>
+                        Professional websites for businesses
+                        and organizations.
+                    </small>
+
+                </span>
+
+                <span class="hitech-order-card-footer">
+
+                    <span>
+                        Select
+                    </span>
+
+                    <span class="hitech-order-card-arrow">
+                        ↗
+                    </span>
+
+                </span>
+
+                <span class="hitech-order-card-check">
+                    ✓
+                </span>
+
+            </button>
+
+
+            <!-- Web Applications -->
+            <button
+                type="button"
+                class="hitech-order-service-card hitech-order-reveal"
+                data-service="webapp"
+            >
+
+                <span class="hitech-order-card-number">
+                    05
+                </span>
+
+                <span class="hitech-order-card-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="3"/>
+                        <path d="M8 8h8M8 12h3M13 12h3M8 16h8"/>
+                    </svg>
+                </span>
+
+                <span class="hitech-order-card-content">
+
+                    <strong>
+                        Web Applications
+                    </strong>
+
+                    <small>
+                        Custom dashboards, portals and
+                        business applications.
+                    </small>
+
+                </span>
+
+                <span class="hitech-order-card-footer">
+
+                    <span>
+                        Select
+                    </span>
+
+                    <span class="hitech-order-card-arrow">
+                        ↗
+                    </span>
+
+                </span>
+
+                <span class="hitech-order-card-check">
+                    ✓
+                </span>
+
+            </button>
+
+
+            <!-- UI UX -->
+            <button
+                type="button"
+                class="hitech-order-service-card hitech-order-reveal"
+                data-service="uiux"
+            >
+
+                <span class="hitech-order-card-number">
+                    06
+                </span>
+
+                <span class="hitech-order-card-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="8"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                </span>
+
+                <span class="hitech-order-card-content">
+
+                    <strong>
+                        UI/UX Design
+                    </strong>
+
+                    <small>
+                        Modern user interfaces and
+                        digital experiences.
+                    </small>
+
+                </span>
+
+                <span class="hitech-order-card-footer">
+
+                    <span>
+                        Select
+                    </span>
+
+                    <span class="hitech-order-card-arrow">
+                        ↗
+                    </span>
+
+                </span>
+
+                <span class="hitech-order-card-check">
+                    ✓
+                </span>
+
+            </button>
+
+
+            <!-- Mobile -->
+            <button
+                type="button"
+                class="hitech-order-service-card hitech-order-reveal"
+                data-service="mobile"
+            >
+
+                <span class="hitech-order-card-number">
+                    07
+                </span>
+
+                <span class="hitech-order-card-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="7" y="2.5" width="10" height="19" rx="2"/>
+                        <path d="M10 5h4M11 18.5h2"/>
+                    </svg>
+                </span>
+
+                <span class="hitech-order-card-content">
+
+                    <strong>
+                        Mobile Applications
+                    </strong>
+
+                    <small>
+                        Android and iOS application
+                        development.
+                    </small>
+
+                </span>
+
+                <span class="hitech-order-card-footer">
+
+                    <span>
+                        Select
+                    </span>
+
+                    <span class="hitech-order-card-arrow">
+                        ↗
+                    </span>
+
+                </span>
+
+                <span class="hitech-order-card-check">
+                    ✓
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================================
+             ORDER CONFIGURATOR
+        ====================================================== -->
+
+        <div
+            class="hitech-order-configurator hitech-order-reveal"
+            id="hitech-order-configurator"
+        >
+
+            <!-- Configurator top -->
+            <div class="hitech-order-config-header">
+
+                <div>
+
+                    <span class="hitech-order-config-label">
+                        SERVICE REQUEST
+                    </span>
+
+                    <h3>
+                        You're requesting:
+                        <strong id="hitech-order-selected-name">
+                            Procurement
+                        </strong>
+                    </h3>
+
+                </div>
+
+                <div class="hitech-order-step">
+                    <span>01</span>
+                    <i></i>
+                    <span>02</span>
+                    <i></i>
+                    <span>03</span>
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PROCUREMENT
+            ================================================== -->
+
+            <div
+                class="hitech-order-form-content hitech-order-form-active"
+                data-form="procurement"
+            >
+
+                <div class="hitech-order-form-heading">
+
+                    <span>
+                        PROCUREMENT
+                    </span>
+
+                    <h4>
+                        Tell us what you need.
+                    </h4>
+
+                    <p>
+                        Provide the basic details and we'll
+                        take it from there.
+                    </p>
+
+                </div>
+
+                <div class="hitech-order-option-grid">
+
+                    <div class="hitech-order-input-group">
+
+                        <label>
+                            Product / Equipment
+                        </label>
+
+                        <input
+                            type="text"
+                            name="product"
+                            placeholder="e.g. Wheel Loader"
+                        >
+
+                    </div>
+
+                    <div class="hitech-order-input-group">
+
+                        <label>
+                            Quantity
+                        </label>
+
+                        <input
+                            type="text"
+                            name="quantity"
+                            placeholder="e.g. 5 units"
+                        >
+
+                    </div>
+
+                    <div class="hitech-order-input-group hitech-order-full">
+
+                        <label>
+                            Specification
+                        </label>
+
+                        <textarea
+                            name="specification"
+                            placeholder="Tell us the specifications you need..."
+                        ></textarea>
+
+                    </div>
+
+                    <div class="hitech-order-input-group">
+
+                        <label>
+                            Budget
+                        </label>
+
+                        <input
+                            type="text"
+                            name="budget"
+                            placeholder="Optional"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PRODUCT SOURCING
+            ================================================== -->
+
+            <div
+                class="hitech-order-form-content"
+                data-form="sourcing"
+            >
+
+                <div class="hitech-order-form-heading">
+
+                    <span>
+                        PRODUCT SOURCING
+                    </span>
+
+                    <h4>
+                        What would you like us to source?
+                    </h4>
+
+                    <p>
+                        Give us a few details about the product
+                        you're looking for.
+                    </p>
+
+                </div>
+
+                <div class="hitech-order-option-grid">
+
+                    <div class="hitech-order-input-group">
+
+                        <label>
+                            Product Name
+                        </label>
+
+                        <input
+                            type="text"
+                            name="productName"
+                            placeholder="Product name"
+                        >
+
+                    </div>
+
+                    <div class="hitech-order-input-group">
+
+                        <label>
+                            Quantity
+                        </label>
+
+                        <input
+                            type="text"
+                            name="sourceQuantity"
+                            placeholder="Required quantity"
+                        >
+
+                    </div>
+
+                    <div class="hitech-order-input-group hitech-order-full">
+
+                        <label>
+                            Specification
+                        </label>
+
+                        <textarea
+                            name="sourceSpecification"
+                            placeholder="Describe the product or specifications..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 RMB EXCHANGE
+            ================================================== -->
+
+            <div
+                class="hitech-order-form-content"
+                data-form="rmb"
+            >
+
+                <div class="hitech-order-rmb-wrapper">
+
+                    <div class="hitech-order-rmb-title">
+
+                        <div class="hitech-order-rmb-symbol">
+                            ¥
+                        </div>
+
+                        <div>
+
+                            <span>
+                                CNY / RMB
+                            </span>
+
+                            <h4>
+                                Chinese Yuan Exchange
+                            </h4>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Buy / Sell -->
+
+                    <div class="hitech-order-rmb-direction">
+
+                        <span class="hitech-order-option-label">
+                            I WANT TO
+                        </span>
+
+                        <div class="hitech-order-rmb-switch">
+
+                            <button
+                                type="button"
+                                class="hitech-order-rmb-choice hitech-order-rmb-choice-active"
+                                data-rmb-direction="buy"
+                            >
+                                <span>Buy RMB</span>
+                                <small>with Naira</small>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="hitech-order-rmb-choice"
+                                data-rmb-direction="sell"
+                            >
+                                <span>Sell RMB</span>
+                                <small>for Naira</small>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Amount -->
+
+                    <div class="hitech-order-rmb-amount">
+
+                        <label>
+                            Amount
+                        </label>
+
+                        <div class="hitech-order-money-input">
+
+                            <span id="hitech-order-currency-symbol">
+                                ₦
+                            </span>
+
+                            <input
+                                type="number"
+                                id="hitech-order-rmb-amount"
+                                placeholder="100,000"
+                                min="0"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Rate -->
+
+                    <div class="hitech-order-rmb-details">
+
+                        <div>
+
+                            <span>
+                                CURRENT RATE
+                            </span>
+
+                            <strong id="hitech-order-rmb-rate">
+                                RATE_PLACEHOLDER
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                ESTIMATED AMOUNT
+                            </span>
+
+                            <strong
+                                id="hitech-order-rmb-result"
+                            >
+                                —
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="hitech-order-rmb-note">
+                        Rate shown is an estimate and may change
+                        before transaction confirmation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 WEB DEVELOPMENT
+            ================================================== -->
+
+            <div
+                class="hitech-order-form-content"
+                data-form="web"
+            >
+
+                <div class="hitech-order-form-heading">
+
+                    <span>
+                        WEB DEVELOPMENT
+                    </span>
+
+                    <h4>
+                        What type of website do you need?
+                    </h4>
+
+                </div>
+
+                <div class="hitech-order-choice-grid">
+
+                    <button type="button">
+                        Corporate Website
+                    </button>
+
+                    <button type="button">
+                        Business Website
+                    </button>
+
+                    <button type="button">
+                        E-Commerce
+                    </button>
+
+                    <button type="button">
+                        Landing Page
+                    </button>
+
+                    <button type="button">
+                        Custom Website
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 WEB APPLICATION
+            ================================================== -->
+
+            <div
+                class="hitech-order-form-content"
+                data-form="webapp"
+            >
+
+                <div class="hitech-order-form-heading">
+
+                    <span>
+                        WEB APPLICATION
+                    </span>
+
+                    <h4>
+                        What are you looking to build?
+                    </h4>
+
+                </div>
+
+                <div class="hitech-order-choice-grid">
+
+                    <button type="button">
+                        Dashboard
+                    </button>
+
+                    <button type="button">
+                        Management System
+                    </button>
+
+                    <button type="button">
+                        Customer Portal
+                    </button>
+
+                    <button type="button">
+                        E-Commerce Platform
+                    </button>
+
+                    <button type="button">
+                        Custom Application
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 UI UX
+            ================================================== -->
+
+            <div
+                class="hitech-order-form-content"
+                data-form="uiux"
+            >
+
+                <div class="hitech-order-form-heading">
+
+                    <span>
+                        UI/UX DESIGN
+                    </span>
+
+                    <h4>
+                        What would you like us to design?
+                    </h4>
+
+                </div>
+
+                <div class="hitech-order-choice-grid">
+
+                    <button type="button">
+                        Website
+                    </button>
+
+                    <button type="button">
+                        Mobile App
+                    </button>
+
+                    <button type="button">
+                        Web Application
+                    </button>
+
+                    <button type="button">
+                        Complete Product Design
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 MOBILE
+            ================================================== -->
+
+            <div
+                class="hitech-order-form-content"
+                data-form="mobile"
+            >
+
+                <div class="hitech-order-form-heading">
+
+                    <span>
+                        MOBILE APPLICATION
+                    </span>
+
+                    <h4>
+                        Which platform do you need?
+                    </h4>
+
+                </div>
+
+                <div class="hitech-order-choice-grid">
+
+                    <button type="button">
+                        Android
+                    </button>
+
+                    <button type="button">
+                        iOS
+                    </button>
+
+                    <button type="button">
+                        Android + iOS
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 BASIC DETAILS
+            ================================================== -->
+
+            <div class="hitech-order-basic-details">
+
+                <div class="hitech-order-form-heading">
+
+                    <span>
+                        ALMOST THERE
+                    </span>
+
+                    <h4>
+                        Just a few basic details.
+                    </h4>
+
+                </div>
+
+                <div class="hitech-order-basic-grid">
+
+                    <div class="hitech-order-input-group">
+
+                        <label>
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="hitech-order-name"
+                            placeholder="Your name"
+                        >
+
+                    </div>
+
+                    <div class="hitech-order-input-group">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="hitech-order-email"
+                            placeholder="you@example.com"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SUBMIT
+            ================================================== -->
+
+            <div class="hitech-order-submit-area">
+
+                <button
+                    type="button"
+                    class="hitech-order-submit"
+                    id="hitech-order-submit"
+                >
+
+                    <span>
+                        Submit Request
+                    </span>
+
+                    <span class="hitech-order-submit-arrow">
+                        →
+                    </span>
+
+                </button>
+
+                <span class="hitech-order-secure-note">
+                    Your request will be prepared securely.
+                </span>
+
+            </div>
+
+
+            <!-- =================================================
+                 CONFIRMATION
+            ================================================== -->
+
+            <div
+                class="hitech-order-success"
+                id="hitech-order-success"
+            >
+
+                <div class="hitech-order-success-icon">
+                    <svg viewBox="0 0 52 52">
+                        <circle
+                            cx="26"
+                            cy="26"
+                            r="24"
+                        />
+                        <path d="M15 27l7 7 15-16"/>
+                    </svg>
+                </div>
+
+                <span>
+                    REQUEST RECEIVED
+                </span>
+
+                <h3>
+                    Your service request has been
+                    prepared successfully.
+                </h3>
+
+                <p>
+                    Thank you. Your selected service and
+                    requirements are ready to be processed.
+                </p>
+
+                <button
+                    type="button"
+                    id="hitech-order-reset"
+                >
+                    Start Another Request
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="hitech-home-footer">
+
+    <div class="hitech-home-container">
+
+        <div class="hitech-home-footer-top">
+
+            <span>
+                HITECH
+            </span>
+
+            <i></i>
+
+            <span>
+                CONNECTING BUSINESS.
+                POWERING INNOVATION.
+            </span>
+
+        </div>
+
+
+        <div class="hitech-home-footer-main">
+
+
+            <div class="hitech-home-footer-brand">
+
+                <img
+                    src="img/HiTECHLOGO2.png"
+                    alt="HiTECH"
+                >
+
+                <p>
+                    Connecting businesses, technology and
+                    global opportunities through practical
+                    solutions.
+                </p>
+
+            </div>
+
+
+            <div class="hitech-home-footer-column">
+
+                <span>
+                    COMPANY
+                </span>
+
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="hitech-home-footer-column">
+
+                <span>
+                    SERVICES
+                </span>
+
+                <a href="services.html">
+                    Procurement &amp; Sourcing
+                </a>
+
+                <a href="services.html">
+                    Foreign Exchange
+                </a>
+
+                <a href="services.html">
+                    Goods Clearance
+                </a>
+
+                <a href="services.html">
+                    UX/UI Design
+                </a>
+
+                <a href="services.html">
+                    Digital Solutions
+                </a>
+
+            </div>
+
+
+            <div class="hitech-home-footer-column">
+
+                <span>
+                    CONNECT
+                </span>
+
+                <a href="tel:+2348033481883">
+                    <i class="bi bi-telephone"></i>
+                    +234 803 348 1883
+                </a>
+
+                <a
+                    href="https://wa.me/8619881201496"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <i class="bi bi-whatsapp"></i>
+                    +86 198 812 01496
+                </a>
+
+                <a href="mailto:info@hitechnglimited">
+                    <i class="bi bi-envelope"></i>
+                    info@hitechnglimited
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hitech-home-footer-bottom">
+
+            <span>
+                © 2026 HiTECH. All Rights Reserved.
+            </span>
+
+            <span>
+                TECHNOLOGY / BUSINESS / OPPORTUNITY
+            </span>
+
+            <span>
+                HITECH / 001
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+
+<button
+    type="button"
+    id="hitechHomeBackTop"
+    class="hitech-home-back-top"
+    aria-label="Back to top"
+>
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+
+</div>
+
+
+
+</body>
+
+</html>
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

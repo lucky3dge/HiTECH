@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiTECH UI/UX|Design</title>
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="header-inner">
+
+      <!-- LEFT: Nav links -->
+      <nav class="header-nav">
+        <a href="product.html">Products</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="uiuxdesign.html">UI/UXDesign</a>
+        <a href="tech.html">Tech</a>
+      </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<nav class="mobile-menu" id="mobileMenu">
+
+    <a href="product.html"><i class="fas fa-box"></i><span>Products</span></a>
+
+    <a href="service.html"><i class="fas fa-cogs"></i><span>Services</span></a>
+
+    <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+
+    <a href="uiuxdesign.html"><i class="fas fa-palette"></i><span>UI/UXDesign</span></a>
+
+    <a href="tech.html"><i class="fas fa-info-circle"></i><span>Tech</span></a>
+
+</nav>
+
+      <div class="menu-overlay" id="menuOverlay"></div>
+
+      <!-- CENTER: Logo -->
+<div class="header-logo">
+    <a href="./index.html" class="hitech-logo-link" aria-label="Home">
+        <img src="./img/HiTECH.png" alt="HiTECH" class="logo-img">
+    </a>
+</div>
+
+      <!-- RIGHT: Language -->
+      <div class="header-right">
+        <button class="lang-btn" id="langBtn" onclick="toggleLang()">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="1"/>
+            <ellipse cx="7.5" cy="7.5" rx="2.8" ry="6.5" stroke="currentColor" stroke-width="1"/>
+            <line x1="1" y1="5.5" x2="14" y2="5.5" stroke="currentColor" stroke-width="1"/>
+            <line x1="1" y1="9.5" x2="14" y2="9.5" stroke="currentColor" stroke-width="1"/>
+          </svg>
+          <span id="currentLang">EN</span>
+          <svg class="chev" viewBox="0 0 9 9" fill="none" width="9" height="9">
+            <polyline points="1.5,3 4.5,6.5 7.5,3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="lang-menu" id="langMenu">
+          <a href="#" class="active" onclick="selectLang(event,'EN')">🌐 Global · English</a>
+          <a href="#" onclick="selectLang(event,'中文')">🇨🇳 China · 简体中文</a>
+          <a href="#" onclick="selectLang(event,'FR')">🇫🇷 France · Français</a>
+          <a href="#" onclick="selectLang(event,'DE')">🇩🇪 Germany · Deutsch</a>
+          <a href="#" onclick="selectLang(event,'AR')">🇸🇦 Arabic · العربية</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+<!-- =========================================================
+     HITECH UI/UX DESIGN SECTION
+========================================================= -->
+
+<section class="hitech-ux-section" id="hitech-ux-design">
+
+    <div class="hitech-ux-container">
+
+        <!-- =================================================
+             SECTION INTRO + UI SHOWCASE
+        ================================================== -->
+        <div class="hitech-ux-hero">
+
+            <!-- LEFT: TEXT CONTENT -->
+            <div class="hitech-ux-content">
+
+                <span class="hitech-ux-label">
+                    <span class="hitech-ux-label-dot"></span>
+                    DIGITAL EXPERIENCE
+                </span>
+
+                <h2 class="hitech-ux-title">
+                    UI/UX <span>Design</span>
+                </h2>
+
+                <p class="hitech-ux-description">
+                    We create intuitive, engaging, and user-centered
+                    digital experiences that connect people with technology.
+                </p>
+
+                <a href="#hitech-ux-services" class="hitech-ux-cta">
+                    <span>Explore Services</span>
+                    <span class="hitech-ux-cta-arrow">→</span>
+                </a>
+
+                <!-- Small supporting information -->
+                <div class="hitech-ux-meta">
+                    <div class="hitech-ux-meta-item">
+                        <strong>01</strong>
+                        <span>Research</span>
+                    </div>
+
+                    <div class="hitech-ux-meta-line"></div>
+
+                    <div class="hitech-ux-meta-item">
+                        <strong>02</strong>
+                        <span>Design</span>
+                    </div>
+
+                    <div class="hitech-ux-meta-line"></div>
+
+                    <div class="hitech-ux-meta-item">
+                        <strong>03</strong>
+                        <span>Test</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 RIGHT: UI/UX INTERFACE SHOWCASE
+            ================================================== -->
+            <div class="hitech-ux-showcase">
+
+                <!-- Floating notification -->
+                <div class="hitech-ux-floating hitech-ux-floating-notification">
+                    <div class="hitech-ux-floating-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <strong>Design Approved</strong>
+                        <small>Just now</small>
+                    </div>
+                </div>
+
+
+                <!-- Desktop Browser -->
+                <div class="hitech-ux-browser">
+
+                    <!-- Browser top bar -->
+                    <div class="hitech-ux-browser-bar">
+
+                        <div class="hitech-ux-browser-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="hitech-ux-browser-address">
+                            <span class="hitech-ux-lock">⌁</span>
+                            dashboard.hitech.design
+                        </div>
+
+                        <div class="hitech-ux-browser-menu">
+                            •••
+                        </div>
+
+                    </div>
+
+
+                    <!-- Dashboard -->
+                    <div class="hitech-ux-dashboard">
+
+                        <!-- Sidebar -->
+                        <aside class="hitech-ux-sidebar">
+
+                            <div class="hitech-ux-app-logo">
+                                <span>H</span>
+                            </div>
+
+                            <nav class="hitech-ux-sidebar-nav">
+
+                                <a href="#" class="active">
+                                    <span>⌂</span>
+                                    <em>Overview</em>
+                                </a>
+
+                                <a href="#">
+                                    <span>◫</span>
+                                    <em>Projects</em>
+                                </a>
+
+                                <a href="#">
+                                    <span>◌</span>
+                                    <em>Analytics</em>
+                                </a>
+
+                                <a href="#">
+                                    <span>◇</span>
+                                    <em>Messages</em>
+                                </a>
+
+                                <a href="#">
+                                    <span>⚙</span>
+                                    <em>Settings</em>
+                                </a>
+
+                            </nav>
+
+                            <div class="hitech-ux-sidebar-bottom">
+                                <div class="hitech-ux-mini-avatar">
+                                    UI
+                                </div>
+                            </div>
+
+                        </aside>
+
+
+                        <!-- Main Dashboard -->
+                        <main class="hitech-ux-dashboard-main">
+
+                            <!-- Dashboard header -->
+                            <div class="hitech-ux-dashboard-header">
+
+                                <div>
+                                    <span class="hitech-ux-dashboard-greeting">
+                                        Welcome back
+                                    </span>
+
+                                    <h3>
+                                        Design Overview
+                                    </h3>
+                                </div>
+
+                                <div class="hitech-ux-user">
+
+                                    <div class="hitech-ux-user-avatar">
+                                        UI
+                                    </div>
+
+                                    <div class="hitech-ux-user-details">
+                                        <strong>Alex Morgan</strong>
+                                        <small>Product Designer</small>
+                                    </div>
+
+                                    <span class="hitech-ux-user-chevron">
+                                        ˅
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Statistics -->
+                            <div class="hitech-ux-stat-grid">
+
+                                <div class="hitech-ux-stat-card">
+                                    <div class="hitech-ux-stat-top">
+                                        <span>Active Users</span>
+                                        <span class="hitech-ux-stat-icon">◉</span>
+                                    </div>
+
+                                    <strong>24,892</strong>
+
+                                    <small class="positive">
+                                        ↑ 12.8%
+                                    </small>
+                                </div>
+
+                                <div class="hitech-ux-stat-card">
+                                    <div class="hitech-ux-stat-top">
+                                        <span>Engagement</span>
+                                        <span class="hitech-ux-stat-icon">↗</span>
+                                    </div>
+
+                                    <strong>78.4%</strong>
+
+                                    <small class="positive">
+                                        ↑ 8.2%
+                                    </small>
+                                </div>
+
+                                <div class="hitech-ux-stat-card">
+                                    <div class="hitech-ux-stat-top">
+                                        <span>Projects</span>
+                                        <span class="hitech-ux-stat-icon">◇</span>
+                                    </div>
+
+                                    <strong>126</strong>
+
+                                    <small class="neutral">
+                                        8 this week
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Analytics area -->
+                            <div class="hitech-ux-dashboard-grid">
+
+                                <!-- Chart -->
+                                <div class="hitech-ux-chart-card">
+
+                                    <div class="hitech-ux-card-heading">
+
+                                        <div>
+                                            <span>USER ACTIVITY</span>
+                                            <strong>Engagement Analytics</strong>
+                                        </div>
+
+                                        <button>
+                                            This Week ˅
+                                        </button>
+
+                                    </div>
+
+                                    <div class="hitech-ux-chart">
+
+                                        <div class="hitech-ux-chart-y">
+                                            <span>100</span>
+                                            <span>75</span>
+                                            <span>50</span>
+                                            <span>25</span>
+                                            <span>0</span>
+                                        </div>
+
+                                        <div class="hitech-ux-chart-area">
+
+                                            <div class="hitech-ux-chart-gridline"></div>
+                                            <div class="hitech-ux-chart-gridline"></div>
+                                            <div class="hitech-ux-chart-gridline"></div>
+                                            <div class="hitech-ux-chart-gridline"></div>
+
+                                            <svg
+                                                class="hitech-ux-line-chart"
+                                                viewBox="0 0 500 180"
+                                                preserveAspectRatio="none"
+                                            >
+
+                                                <defs>
+                                                    <linearGradient
+                                                        id="hitechChartFade"
+                                                        x1="0"
+                                                        y1="0"
+                                                        x2="0"
+                                                        y2="1"
+                                                    >
+                                                        <stop
+                                                            offset="0%"
+                                                            stop-color="#1F4E8C"
+                                                            stop-opacity=".20"
+                                                        />
+
+                                                        <stop
+                                                            offset="100%"
+                                                            stop-color="#1F4E8C"
+                                                            stop-opacity="0"
+                                                        />
+                                                    </linearGradient>
+                                                </defs>
+
+                                                <path
+                                                    class="hitech-ux-chart-fill"
+                                                    d="M0,145
+                                                       C45,130 55,115 90,125
+                                                       S135,100 170,108
+                                                       S215,65 250,82
+                                                       S300,75 330,60
+                                                       S380,90 410,52
+                                                       S460,40 500,20
+                                                       L500,180
+                                                       L0,180 Z"
+                                                ></path>
+
+                                                <path
+                                                    class="hitech-ux-chart-line"
+                                                    d="M0,145
+                                                       C45,130 55,115 90,125
+                                                       S135,100 170,108
+                                                       S215,65 250,82
+                                                       S300,75 330,60
+                                                       S380,90 410,52
+                                                       S460,40 500,20"
+                                                ></path>
+
+                                                <circle
+                                                    cx="410"
+                                                    cy="52"
+                                                    r="5"
+                                                    class="hitech-ux-chart-point"
+                                                ></circle>
+
+                                            </svg>
+
+                                            <div class="hitech-ux-chart-x">
+                                                <span>Mon</span>
+                                                <span>Tue</span>
+                                                <span>Wed</span>
+                                                <span>Thu</span>
+                                                <span>Fri</span>
+                                                <span>Sat</span>
+                                                <span>Sun</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Progress card -->
+                                <div class="hitech-ux-progress-card">
+
+                                    <div class="hitech-ux-card-heading">
+                                        <div>
+                                            <span>PROJECT STATUS</span>
+                                            <strong>Design Progress</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="hitech-ux-progress-circle">
+
+                                        <svg viewBox="0 0 120 120">
+
+                                            <circle
+                                                class="hitech-ux-progress-bg"
+                                                cx="60"
+                                                cy="60"
+                                                r="48"
+                                            ></circle>
+
+                                            <circle
+                                                class="hitech-ux-progress-value"
+                                                cx="60"
+                                                cy="60"
+                                                r="48"
+                                            ></circle>
+
+                                        </svg>
+
+                                        <div>
+                                            <strong>82%</strong>
+                                            <small>Complete</small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="hitech-ux-progress-info">
+                                        <span>
+                                            <i></i>
+                                            Completed
+                                        </span>
+
+                                        <span>
+                                            <i></i>
+                                            Remaining
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Recent projects -->
+                            <div class="hitech-ux-projects">
+
+                                <div class="hitech-ux-project-heading">
+                                    <strong>Recent Projects</strong>
+                                    <a href="#">View all →</a>
+                                </div>
+
+                                <div class="hitech-ux-project-list">
+
+                                    <div class="hitech-ux-project">
+
+                                        <div class="hitech-ux-project-icon">
+                                            A
+                                        </div>
+
+                                        <div>
+                                            <strong>Atlas Mobile</strong>
+                                            <small>Mobile Application</small>
+                                        </div>
+
+                                        <span class="hitech-ux-project-status">
+                                            In Progress
+                                        </span>
+
+                                    </div>
+
+                                    <div class="hitech-ux-project">
+
+                                        <div class="hitech-ux-project-icon second">
+                                            F
+                                        </div>
+
+                                        <div>
+                                            <strong>Finova</strong>
+                                            <small>Fintech Platform</small>
+                                        </div>
+
+                                        <span class="hitech-ux-project-status completed">
+                                            Completed
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </main>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Mobile UI -->
+                <div class="hitech-ux-mobile">
+
+                    <div class="hitech-ux-mobile-speaker"></div>
+
+                    <div class="hitech-ux-mobile-screen">
+
+                        <div class="hitech-ux-mobile-header">
+                            <div>
+                                <small>Good morning</small>
+                                <strong>Alex 👋</strong>
+                            </div>
+
+                            <div class="hitech-ux-mobile-avatar">
+                                A
+                            </div>
+                        </div>
+
+
+                        <div class="hitech-ux-mobile-balance">
+                            <span>PROJECT OVERVIEW</span>
+                            <strong>82%</strong>
+
+                            <div class="hitech-ux-mobile-progress">
+                                <i></i>
+                            </div>
+
+                            <small>
+                                4 of 5 milestones completed
+                            </small>
+                        </div>
+
+
+                        <div class="hitech-ux-mobile-section-title">
+                            <strong>Quick Insights</strong>
+                            <span>•••</span>
+                        </div>
+
+
+                        <div class="hitech-ux-mobile-cards">
+
+                            <div>
+                                <span>Users</span>
+                                <strong>24.8K</strong>
+                                <small>+12.8%</small>
+                            </div>
+
+                            <div>
+                                <span>Engagement</span>
+                                <strong>78.4%</strong>
+                                <small>+8.2%</small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="hitech-ux-mobile-activity">
+
+                            <div class="hitech-ux-mobile-activity-head">
+                                <strong>Activity</strong>
+                                <span>This week ˅</span>
+                            </div>
+
+                            <div class="hitech-ux-mobile-bars">
+
+                                <i style="height:42%"></i>
+                                <i style="height:64%"></i>
+                                <i style="height:52%"></i>
+                                <i style="height:78%"></i>
+                                <i style="height:60%"></i>
+                                <i style="height:88%"></i>
+                                <i style="height:72%"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="hitech-ux-mobile-nav">
+
+                            <span class="active">⌂</span>
+                            <span>◫</span>
+                            <span>＋</span>
+                            <span>◌</span>
+                            <span>⚙</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Floating design tool -->
+                <div class="hitech-ux-floating hitech-ux-floating-tool">
+
+                    <div class="hitech-ux-tool-shape"></div>
+
+                    <div>
+                        <strong>Design System</strong>
+                        <small>Synced</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SERVICES
+        ================================================== -->
+        <div class="hitech-ux-services" id="hitech-ux-services">
+
+            <div class="hitech-ux-services-heading">
+
+                <div>
+                    <span class="hitech-ux-label">
+                        <span class="hitech-ux-label-dot"></span>
+                        OUR EXPERTISE
+                    </span>
+
+                    <h3>
+                        Designed around<br>
+                        <span>people and purpose.</span>
+                    </h3>
+                </div>
+
+                <p>
+                    Every experience begins with understanding your users
+                    and ends with creating something they genuinely enjoy using.
+                </p>
+
+            </div>
+
+
+            <div class="hitech-ux-service-grid">
+
+                <!-- Service 01 -->
+                <article class="hitech-ux-card">
+
+                    <div class="hitech-ux-card-number">
+                        01
+                    </div>
+
+                    <div class="hitech-ux-service-icon">
+                        <span>⌕</span>
+                    </div>
+
+                    <h4>
+                        UX Research
+                    </h4>
+
+                    <p>
+                        User research, personas, journey mapping and
+                        user behavior analysis.
+                    </p>
+
+                    <div class="hitech-ux-card-arrow">
+                        →
+                    </div>
+
+                </article>
+
+
+                <!-- Service 02 -->
+                <article class="hitech-ux-card">
+
+                    <div class="hitech-ux-card-number">
+                        02
+                    </div>
+
+                    <div class="hitech-ux-service-icon">
+                        <span>◇</span>
+                    </div>
+
+                    <h4>
+                        UI Design
+                    </h4>
+
+                    <p>
+                        Modern interfaces, responsive layouts and
+                        scalable design systems.
+                    </p>
+
+                    <div class="hitech-ux-card-arrow">
+                        →
+                    </div>
+
+                </article>
+
+
+                <!-- Service 03 -->
+                <article class="hitech-ux-card">
+
+                    <div class="hitech-ux-card-number">
+                        03
+                    </div>
+
+                    <div class="hitech-ux-service-icon">
+                        <span>⌘</span>
+                    </div>
+
+                    <h4>
+                        Prototyping
+                    </h4>
+
+                    <p>
+                        Interactive prototypes, user flows and
+                        product concepts.
+                    </p>
+
+                    <div class="hitech-ux-card-arrow">
+                        →
+                    </div>
+
+                </article>
+
+
+                <!-- Service 04 -->
+                <article class="hitech-ux-card">
+
+                    <div class="hitech-ux-card-number">
+                        04
+                    </div>
+
+                    <div class="hitech-ux-service-icon">
+                        <span>✓</span>
+                    </div>
+
+                    <h4>
+                        Usability Testing
+                    </h4>
+
+                    <p>
+                        Testing, feedback analysis and continuous
+                        experience improvement.
+                    </p>
+
+                    <div class="hitech-ux-card-arrow">
+                        →
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     HITECH — OUR TECHNOLOGY WORK
+     Self-contained portfolio section
+========================================================= -->
+
+<section class="hitech-tech-section" id="hitech-tech-work">
+
+    <div class="hitech-tech-container">
+
+        <!-- =====================================================
+             SECTION HEADER
+        ====================================================== -->
+
+        <div class="hitech-tech-header">
+
+            <div class="hitech-tech-header-copy">
+
+                <span class="hitech-tech-eyebrow">
+                    <span class="hitech-tech-eyebrow-dot"></span>
+                    OUR TECHNOLOGY
+                </span>
+
+                <h2 class="hitech-tech-title">
+                    Digital Solutions
+                    <span>We've Built</span>
+                </h2>
+
+            </div>
+
+            <div class="hitech-tech-header-side">
+
+                <p>
+                    From modern websites and powerful web applications
+                    to Android and iOS applications, we create digital
+                    products designed to solve real-world business problems.
+                </p>
+
+                <div class="hitech-tech-capabilities">
+                    <span>Websites</span>
+                    <i></i>
+                    <span>Web Apps</span>
+                    <i></i>
+                    <span>Mobile</span>
+                    <i></i>
+                    <span>Software</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             CATEGORY FILTER
+        ====================================================== -->
+
+        <div class="hitech-tech-filter-wrap">
+
+            <div class="hitech-tech-filter" role="tablist">
+
+                <button
+                    class="hitech-tech-filter-btn active"
+                    type="button"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="hitech-tech-filter-btn"
+                    type="button"
+                    data-filter="websites"
+                >
+                    Websites
+                </button>
+
+                <button
+                    class="hitech-tech-filter-btn"
+                    type="button"
+                    data-filter="web-applications"
+                >
+                    Web Applications
+                </button>
+
+                <button
+                    class="hitech-tech-filter-btn"
+                    type="button"
+                    data-filter="mobile"
+                >
+                    Mobile Apps
+                </button>
+
+                <button
+                    class="hitech-tech-filter-btn"
+                    type="button"
+                    data-filter="software"
+                >
+                    Software
+                </button>
+
+                <button
+                    class="hitech-tech-filter-btn"
+                    type="button"
+                    data-filter="uiux"
+                >
+                    UI/UX
+                </button>
+
+                <button
+                    class="hitech-tech-filter-btn"
+                    type="button"
+                    data-filter="solutions"
+                >
+                    Technology Solutions
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             PORTFOLIO CAROUSEL
+        ====================================================== -->
+
+        <div class="hitech-tech-portfolio">
+
+            <div class="hitech-tech-stage">
+
+
+                <!-- =================================================
+                     PROJECT 01 — JKD NEXUS
+                ================================================== -->
+
+                <article
+                    class="hitech-tech-project active"
+                    data-category="websites"
+                    data-project="1"
+                >
+
+                    <div class="hitech-tech-project-visual">
+
+                        <div class="hitech-tech-browser">
+
+                            <!-- Browser chrome -->
+                            <div class="hitech-tech-browser-top">
+
+                                <div class="hitech-tech-browser-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="hitech-tech-browser-address">
+                                    <span class="hitech-tech-address-lock">
+                                        ◉
+                                    </span>
+
+                                    jkdnexuslimited.com
+
+                                </div>
+
+                                <div class="hitech-tech-browser-actions">
+                                    ⋯
+                                </div>
+
+                            </div>
+
+
+                            <!-- Browser content -->
+                            <div class="hitech-tech-jkd-preview">
+
+                                <!-- Navigation -->
+                                <div class="hitech-tech-jkd-nav">
+
+                                    <div class="hitech-tech-jkd-logo">
+                                        JKD
+                                        <small>NEXUS LIMITED</small>
+                                    </div>
+
+                                    <div class="hitech-tech-jkd-links">
+                                        <span>Home</span>
+                                        <span>Products</span>
+                                        <span>Services</span>
+                                        <span>About</span>
+                                    </div>
+
+                                    <div class="hitech-tech-jkd-menu">
+                                        ☰
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Hero -->
+                                <div class="hitech-tech-jkd-hero">
+
+                                    <div class="hitech-tech-jkd-hero-copy">
+
+                                        <small>
+                                            YOUR LINK TO CHINA'S MARKET
+                                        </small>
+
+                                        <h3>
+                                            Connecting Business
+                                            <strong>Beyond Borders.</strong>
+                                        </h3>
+
+                                        <p>
+                                            Explore products, machinery
+                                            and business opportunities.
+                                        </p>
+
+                                        <div class="hitech-tech-jkd-buttons">
+                                            <span>Explore Products</span>
+                                            <span>Learn More</span>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- Machinery visual -->
+                                    <div class="hitech-tech-machine-scene">
+
+                                        <div class="hitech-tech-machine-glow"></div>
+
+                                        <!-- Wheel loader -->
+                                        <div class="hitech-tech-loader">
+
+                                            <div class="hitech-tech-loader-cabin">
+                                                <div></div>
+                                            </div>
+
+                                            <div class="hitech-tech-loader-body">
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+
+                                            <div class="hitech-tech-loader-arm"></div>
+
+                                            <div class="hitech-tech-loader-bucket"></div>
+
+                                            <div class="hitech-tech-loader-wheel one"></div>
+                                            <div class="hitech-tech-loader-wheel two"></div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Product cards -->
+                                <div class="hitech-tech-jkd-products">
+
+                                    <div class="hitech-tech-jkd-product">
+
+                                        <div class="hitech-tech-product-icon">
+                                            WL
+                                        </div>
+
+                                        <div>
+                                            <strong>Wheel Loader</strong>
+                                            <small>Heavy Machinery</small>
+                                        </div>
+
+                                        <span>→</span>
+
+                                    </div>
+
+                                    <div class="hitech-tech-jkd-product">
+
+                                        <div class="hitech-tech-product-icon excavator">
+                                            EX
+                                        </div>
+
+                                        <div>
+                                            <strong>Excavator</strong>
+                                            <small>Construction</small>
+                                        </div>
+
+                                        <span>→</span>
+
+                                    </div>
+
+                                    <div class="hitech-tech-jkd-product">
+
+                                        <div class="hitech-tech-product-icon roller">
+                                            RR
+                                        </div>
+
+                                        <div>
+                                            <strong>Road Roller</strong>
+                                            <small>Infrastructure</small>
+                                        </div>
+
+                                        <span>→</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Floating technology label -->
+                        <div class="hitech-tech-floating hitech-tech-floating-stack">
+
+                            <div class="hitech-tech-floating-icon">
+                                &lt;/&gt;
+                            </div>
+
+                            <div>
+                                <strong>Digital Platform</strong>
+                                <small>Built by HiTECH</small>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Floating status -->
+                        <div class="hitech-tech-floating hitech-tech-floating-status">
+
+                            <span class="hitech-tech-status-dot"></span>
+
+                            <div>
+                                <strong>Live Project</strong>
+                                <small>Production Ready</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PROJECT INFORMATION
+                    ================================================== -->
+
+                    <div class="hitech-tech-project-info">
+
+                        <div class="hitech-tech-project-number">
+                            01
+                        </div>
+
+                        <div class="hitech-tech-project-category">
+                            WEBSITE DEVELOPMENT
+                        </div>
+
+                        <h3>
+                            JKD Nexus Limited
+                        </h3>
+
+                        <p>
+                            A modern corporate digital platform connecting
+                            businesses with China's market, featuring
+                            products, machinery and business services.
+                        </p>
+
+                        <div class="hitech-tech-project-tech">
+
+                            <span>HTML</span>
+                            <i>•</i>
+                            <span>CSS</span>
+                            <i>•</i>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <a
+                            href="https://jkdnexuslimited.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="hitech-tech-project-button"
+                        >
+                            <span>View Project</span>
+                            <strong>↗</strong>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 02 — BUSINESS MANAGEMENT SYSTEM
+                ================================================== -->
+
+                <article
+                    class="hitech-tech-project"
+                    data-category="web-applications"
+                    data-project="2"
+                >
+
+                    <div class="hitech-tech-project-visual">
+
+                        <div class="hitech-tech-dashboard-preview">
+
+                            <div class="hitech-tech-dashboard-sidebar">
+
+                                <div class="hitech-tech-dashboard-brand">
+                                    H
+                                </div>
+
+                                <span class="active">⌂</span>
+                                <span>◫</span>
+                                <span>◌</span>
+                                <span>▣</span>
+                                <span>⚙</span>
+
+                            </div>
+
+                            <div class="hitech-tech-dashboard-content">
+
+                                <div class="hitech-tech-dashboard-head">
+
+                                    <div>
+                                        <small>BUSINESS MANAGEMENT</small>
+                                        <h3>Overview</h3>
+                                    </div>
+
+                                    <div class="hitech-tech-dashboard-user">
+                                        <span>AM</span>
+                                        Alex Morgan
+                                    </div>
+
+                                </div>
+
+
+                                <div class="hitech-tech-dashboard-stats">
+
+                                    <div>
+                                        <small>Total Revenue</small>
+                                        <strong>$248,920</strong>
+                                        <em>↑ 18.4%</em>
+                                    </div>
+
+                                    <div>
+                                        <small>Customers</small>
+                                        <strong>8,429</strong>
+                                        <em>↑ 12.1%</em>
+                                    </div>
+
+                                    <div>
+                                        <small>Orders</small>
+                                        <strong>1,284</strong>
+                                        <em>↑ 9.8%</em>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="hitech-tech-dashboard-chart">
+
+                                    <div class="hitech-tech-chart-head">
+                                        <strong>Business Performance</strong>
+                                        <span>2026</span>
+                                    </div>
+
+                                    <div class="hitech-tech-chart-lines">
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                    </div>
+
+                                    <svg
+                                        viewBox="0 0 600 180"
+                                        preserveAspectRatio="none"
+                                    >
+
+                                        <path
+                                            d="M0 145 C70 135 90 100 150 118 S240 65 300 92 S390 110 440 58 S530 55 600 20"
+                                        ></path>
+
+                                    </svg>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hitech-tech-project-info">
+
+                        <div class="hitech-tech-project-number">
+                            02
+                        </div>
+
+                        <div class="hitech-tech-project-category">
+                            WEB APPLICATION
+                        </div>
+
+                        <h3>
+                            Business Management System
+                        </h3>
+
+                        <p>
+                            A centralized business application designed
+                            to manage operations, customers, analytics,
+                            orders and organizational workflows.
+                        </p>
+
+                        <div class="hitech-tech-project-tech">
+
+                            <span>HTML</span>
+                            <i>•</i>
+                            <span>CSS</span>
+                            <i>•</i>
+                            <span>JavaScript</span>
+                            <i>•</i>
+                            <span>Node.js</span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="hitech-tech-project-button hitech-tech-demo-button"
+                        >
+                            <span>View Project</span>
+                            <strong>↗</strong>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 03 — MOBILE APPLICATION
+                ================================================== -->
+
+                <article
+                    class="hitech-tech-project"
+                    data-category="mobile"
+                    data-project="3"
+                >
+
+                    <div class="hitech-tech-project-visual hitech-tech-mobile-visual">
+
+                        <div class="hitech-tech-phone phone-one">
+
+                            <div class="hitech-tech-phone-screen">
+
+                                <div class="hitech-tech-phone-status">
+                                    9:41
+                                    <span>● ● ●</span>
+                                </div>
+
+                                <div class="hitech-tech-phone-header">
+                                    <div>
+                                        <small>Good morning</small>
+                                        <strong>Welcome back</strong>
+                                    </div>
+
+                                    <span>AM</span>
+                                </div>
+
+                                <div class="hitech-tech-phone-balance">
+                                    <small>AVAILABLE BALANCE</small>
+                                    <strong>$24,890.00</strong>
+                                    <em>+12.8%</em>
+                                </div>
+
+                                <div class="hitech-tech-phone-actions">
+
+                                    <div>
+                                        <span>↗</span>
+                                        Send
+                                    </div>
+
+                                    <div>
+                                        <span>↓</span>
+                                        Receive
+                                    </div>
+
+                                    <div>
+                                        <span>＋</span>
+                                        Add
+                                    </div>
+
+                                </div>
+
+                                <div class="hitech-tech-phone-section">
+                                    <strong>Recent Activity</strong>
+
+                                    <div>
+                                        <span>JD</span>
+                                        <p>
+                                            Payment received
+                                            <small>Today</small>
+                                        </p>
+                                        <b>+$820</b>
+                                    </div>
+
+                                    <div>
+                                        <span>NX</span>
+                                        <p>
+                                            Business purchase
+                                            <small>Yesterday</small>
+                                        </p>
+                                        <b>-$340</b>
+                                    </div>
+
+                                </div>
+
+                                <div class="hitech-tech-phone-nav">
+                                    <span class="active">⌂</span>
+                                    <span>◫</span>
+                                    <span>＋</span>
+                                    <span>◌</span>
+                                    <span>⚙</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="hitech-tech-phone phone-two">
+
+                            <div class="hitech-tech-phone-screen">
+
+                                <div class="hitech-tech-phone-status">
+                                    9:41
+                                    <span>● ● ●</span>
+                                </div>
+
+                                <div class="hitech-tech-phone-map">
+
+                                    <div class="hitech-tech-map-grid"></div>
+
+                                    <div class="hitech-tech-map-route"></div>
+
+                                    <div class="hitech-tech-map-pin">
+                                        ●
+                                    </div>
+
+                                </div>
+
+                                <div class="hitech-tech-phone-bottom-card">
+
+                                    <small>DELIVERY STATUS</small>
+
+                                    <strong>
+                                        On the way
+                                    </strong>
+
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hitech-tech-project-info">
+
+                        <div class="hitech-tech-project-number">
+                            03
+                        </div>
+
+                        <div class="hitech-tech-project-category">
+                            ANDROID &amp; IOS
+                        </div>
+
+                        <h3>
+                            Mobile Business Application
+                        </h3>
+
+                        <p>
+                            A modern mobile experience designed for
+                            customers and teams to access important
+                            business services from anywhere.
+                        </p>
+
+                        <div class="hitech-tech-project-tech">
+
+                            <span>Android</span>
+                            <i>•</i>
+                            <span>iOS</span>
+                            <i>•</i>
+                            <span>API</span>
+                            <i>•</i>
+                            <span>Cloud</span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="hitech-tech-project-button hitech-tech-demo-button"
+                        >
+                            <span>View Project</span>
+                            <strong>↗</strong>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 04 — E-COMMERCE
+                ================================================== -->
+
+                <article
+                    class="hitech-tech-project"
+                    data-category="web-applications"
+                    data-project="4"
+                >
+
+                    <div class="hitech-tech-project-visual">
+
+                        <div class="hitech-tech-ecommerce">
+
+                            <div class="hitech-tech-ecommerce-nav">
+
+                                <strong>MARKET<span>O</span></strong>
+
+                                <div>
+                                    Home
+                                    Products
+                                    Categories
+                                    About
+                                </div>
+
+                                <span>⌕　🛒</span>
+
+                            </div>
+
+
+                            <div class="hitech-tech-ecommerce-body">
+
+                                <div class="hitech-tech-ecommerce-copy">
+
+                                    <small>NEW COLLECTION</small>
+
+                                    <h3>
+                                        Better products.
+                                        <strong>Better choices.</strong>
+                                    </h3>
+
+                                    <p>
+                                        A seamless digital shopping
+                                        experience designed around
+                                        discovery and conversion.
+                                    </p>
+
+                                    <span>
+                                        Explore Collection →
+                                    </span>
+
+                                </div>
+
+
+                                <div class="hitech-tech-product-orb">
+
+                                    <div class="hitech-tech-product-shape"></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="hitech-tech-ecommerce-products">
+
+                                <div>
+                                    <span>01</span>
+                                    <strong>Featured Product</strong>
+                                    <small>$129.00</small>
+                                </div>
+
+                                <div>
+                                    <span>02</span>
+                                    <strong>Premium Collection</strong>
+                                    <small>$249.00</small>
+                                </div>
+
+                                <div>
+                                    <span>03</span>
+                                    <strong>New Arrival</strong>
+                                    <small>$189.00</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hitech-tech-project-info">
+
+                        <div class="hitech-tech-project-number">
+                            04
+                        </div>
+
+                        <div class="hitech-tech-project-category">
+                            WEB APPLICATION
+                        </div>
+
+                        <h3>
+                            E-Commerce Platform
+                        </h3>
+
+                        <p>
+                            A scalable online commerce experience
+                            combining product discovery, customer
+                            journeys and digital transactions.
+                        </p>
+
+                        <div class="hitech-tech-project-tech">
+
+                            <span>Frontend</span>
+                            <i>•</i>
+                            <span>Backend</span>
+                            <i>•</i>
+                            <span>Database</span>
+                            <i>•</i>
+                            <span>API</span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="hitech-tech-project-button hitech-tech-demo-button"
+                        >
+                            <span>View Project</span>
+                            <strong>↗</strong>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 05 — CUSTOM SOFTWARE
+                ================================================== -->
+
+                <article
+                    class="hitech-tech-project"
+                    data-category="software"
+                    data-project="5"
+                >
+
+                    <div class="hitech-tech-project-visual">
+
+                        <div class="hitech-tech-software-window">
+
+                            <div class="hitech-tech-software-titlebar">
+
+                                <div>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <strong>
+                                    HiTECH Business Suite
+                                </strong>
+
+                                <small>
+                                    ● Online
+                                </small>
+
+                            </div>
+
+
+                            <div class="hitech-tech-software-body">
+
+                                <aside>
+
+                                    <div class="hitech-tech-software-logo">
+                                        H
+                                    </div>
+
+                                    <span class="active">
+                                        Dashboard
+                                    </span>
+
+                                    <span>
+                                        Inventory
+                                    </span>
+
+                                    <span>
+                                        Customers
+                                    </span>
+
+                                    <span>
+                                        Reports
+                                    </span>
+
+                                    <span>
+                                        Settings
+                                    </span>
+
+                                </aside>
+
+
+                                <main>
+
+                                    <div class="hitech-tech-software-heading">
+
+                                        <div>
+                                            <small>BUSINESS OPERATIONS</small>
+                                            <h3>Control Center</h3>
+                                        </div>
+
+                                        <button>
+                                            + New Record
+                                        </button>
+
+                                    </div>
+
+
+                                    <div class="hitech-tech-software-cards">
+
+                                        <div>
+                                            <small>ACTIVE RECORDS</small>
+                                            <strong>14,892</strong>
+                                            <span>↑ 14.8%</span>
+                                        </div>
+
+                                        <div>
+                                            <small>PROCESSED</small>
+                                            <strong>9,284</strong>
+                                            <span>↑ 8.4%</span>
+                                        </div>
+
+                                        <div>
+                                            <small>EFFICIENCY</small>
+                                            <strong>94.2%</strong>
+                                            <span>↑ 5.1%</span>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="hitech-tech-software-table">
+
+                                        <div>
+                                            <span>CLIENT</span>
+                                            <span>STATUS</span>
+                                            <span>VALUE</span>
+                                        </div>
+
+                                        <div>
+                                            <strong>Atlas Group</strong>
+                                            <em>Active</em>
+                                            <b>$18,200</b>
+                                        </div>
+
+                                        <div>
+                                            <strong>Nexus Trading</strong>
+                                            <em>Active</em>
+                                            <b>$12,850</b>
+                                        </div>
+
+                                        <div>
+                                            <strong>Global Industries</strong>
+                                            <em>Pending</em>
+                                            <b>$9,420</b>
+                                        </div>
+
+                                    </div>
+
+                                </main>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hitech-tech-project-info">
+
+                        <div class="hitech-tech-project-number">
+                            05
+                        </div>
+
+                        <div class="hitech-tech-project-category">
+                            SOFTWARE DEVELOPMENT
+                        </div>
+
+                        <h3>
+                            Custom Business Software
+                        </h3>
+
+                        <p>
+                            Purpose-built software designed around
+                            unique business processes, operational
+                            requirements and long-term scalability.
+                        </p>
+
+                        <div class="hitech-tech-project-tech">
+
+                            <span>Custom Software</span>
+                            <i>•</i>
+                            <span>Database</span>
+                            <i>•</i>
+                            <span>API</span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="hitech-tech-project-button hitech-tech-demo-button"
+                        >
+                            <span>View Project</span>
+                            <strong>↗</strong>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 06 — UI/UX
+                ================================================== -->
+
+                <article
+                    class="hitech-tech-project"
+                    data-category="uiux"
+                    data-project="6"
+                >
+
+                    <div class="hitech-tech-project-visual hitech-tech-uiux-visual">
+
+                        <div class="hitech-tech-design-board">
+
+                            <div class="hitech-tech-design-toolbar">
+
+                                <strong>
+                                    Product Design
+                                </strong>
+
+                                <span>
+                                    Prototype
+                                </span>
+
+                                <span>
+                                    Share
+                                </span>
+
+                            </div>
+
+
+                            <div class="hitech-tech-design-canvas">
+
+                                <div class="hitech-tech-design-phone">
+
+                                    <div class="hitech-tech-design-phone-header">
+                                        <span>9:41</span>
+                                        <span>● ● ●</span>
+                                    </div>
+
+                                    <div class="hitech-tech-design-card">
+                                        <small>YOUR BALANCE</small>
+                                        <strong>$28,420</strong>
+                                        <span>+14.8% this month</span>
+                                    </div>
+
+                                    <div class="hitech-tech-design-list">
+
+                                        <span></span>
+                                        <div>
+                                            <strong>Transactions</strong>
+                                            <small>Recent activity</small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="hitech-tech-design-list">
+
+                                        <span></span>
+                                        <div>
+                                            <strong>Analytics</strong>
+                                            <small>Performance overview</small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="hitech-tech-design-nav">
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="hitech-tech-design-panel">
+
+                                    <small>DESIGN SYSTEM</small>
+
+                                    <strong>
+                                        Color &amp; Type
+                                    </strong>
+
+                                    <div class="hitech-tech-color-row">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                    <div class="hitech-tech-type-line large"></div>
+                                    <div class="hitech-tech-type-line"></div>
+                                    <div class="hitech-tech-type-line short"></div>
+
+                                    <div class="hitech-tech-design-button">
+                                        Primary Action
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hitech-tech-project-info">
+
+                        <div class="hitech-tech-project-number">
+                            06
+                        </div>
+
+                        <div class="hitech-tech-project-category">
+                            UI/UX DESIGN
+                        </div>
+
+                        <h3>
+                            Digital Product Interface
+                        </h3>
+
+                        <p>
+                            Research-driven interfaces, design systems
+                            and interactive product experiences built
+                            around real users.
+                        </p>
+
+                        <div class="hitech-tech-project-tech">
+
+                            <span>UX Research</span>
+                            <i>•</i>
+                            <span>UI Design</span>
+                            <i>•</i>
+                            <span>Prototyping</span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="hitech-tech-project-button hitech-tech-demo-button"
+                        >
+                            <span>View Project</span>
+                            <strong>↗</strong>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 07 — TECHNOLOGY SOLUTIONS
+                ================================================== -->
+
+                <article
+                    class="hitech-tech-project"
+                    data-category="solutions"
+                    data-project="7"
+                >
+
+                    <div class="hitech-tech-project-visual">
+
+                        <div class="hitech-tech-solution-map">
+
+                            <div class="hitech-tech-solution-header">
+
+                                <div>
+                                    <small>TECHNOLOGY ECOSYSTEM</small>
+                                    <strong>Connected Solutions</strong>
+                                </div>
+
+                                <span>
+                                    LIVE
+                                </span>
+
+                            </div>
+
+
+                            <div class="hitech-tech-network">
+
+                                <div class="hitech-tech-network-line line-one"></div>
+                                <div class="hitech-tech-network-line line-two"></div>
+                                <div class="hitech-tech-network-line line-three"></div>
+                                <div class="hitech-tech-network-line line-four"></div>
+
+                                <div class="hitech-tech-network-node center">
+                                    <strong>HiTECH</strong>
+                                    <small>Core Platform</small>
+                                </div>
+
+                                <div class="hitech-tech-network-node top">
+                                    <strong>Cloud</strong>
+                                    <small>Infrastructure</small>
+                                </div>
+
+                                <div class="hitech-tech-network-node left">
+                                    <strong>Web</strong>
+                                    <small>Applications</small>
+                                </div>
+
+                                <div class="hitech-tech-network-node right">
+                                    <strong>Mobile</strong>
+                                    <small>Android / iOS</small>
+                                </div>
+
+                                <div class="hitech-tech-network-node bottom">
+                                    <strong>Data</strong>
+                                    <small>Analytics</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hitech-tech-project-info">
+
+                        <div class="hitech-tech-project-number">
+                            07
+                        </div>
+
+                        <div class="hitech-tech-project-category">
+                            TECHNOLOGY SOLUTIONS
+                        </div>
+
+                        <h3>
+                            Integrated Digital Solutions
+                        </h3>
+
+                        <p>
+                            Connected technology ecosystems that bring
+                            websites, applications, software, data and
+                            digital services together.
+                        </p>
+
+                        <div class="hitech-tech-project-tech">
+
+                            <span>Cloud</span>
+                            <i>•</i>
+                            <span>APIs</span>
+                            <i>•</i>
+                            <span>Automation</span>
+                            <i>•</i>
+                            <span>Data</span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="hitech-tech-project-button hitech-tech-demo-button"
+                        >
+                            <span>View Project</span>
+                            <strong>↗</strong>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =====================================================
+                 CAROUSEL CONTROLS
+            ====================================================== -->
+
+            <div class="hitech-tech-controls">
+
+                <button
+                    type="button"
+                    class="hitech-tech-control hitech-tech-prev"
+                    aria-label="Previous project"
+                >
+                    ←
+                </button>
+
+                <div class="hitech-tech-indicators">
+
+                    <button
+                        type="button"
+                        class="active"
+                        data-slide="1"
+                        aria-label="Go to project 1"
+                    >
+                        01
+                    </button>
+
+                    <span></span>
+
+                    <button
+                        type="button"
+                        data-slide="2"
+                        aria-label="Go to project 2"
+                    >
+                        02
+                    </button>
+
+                    <span></span>
+
+                    <button
+                        type="button"
+                        data-slide="3"
+                        aria-label="Go to project 3"
+                    >
+                        03
+                    </button>
+
+                    <span></span>
+
+                    <button
+                        type="button"
+                        data-slide="4"
+                        aria-label="Go to project 4"
+                    >
+                        04
+                    </button>
+
+                    <span></span>
+
+                    <button
+                        type="button"
+                        data-slide="5"
+                        aria-label="Go to project 5"
+                    >
+                        05
+                    </button>
+
+                    <span></span>
+
+                    <button
+                        type="button"
+                        data-slide="6"
+                        aria-label="Go to project 6"
+                    >
+                        06
+                    </button>
+
+                    <span></span>
+
+                    <button
+                        type="button"
+                        data-slide="7"
+                        aria-label="Go to project 7"
+                    >
+                        07
+                    </button>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="hitech-tech-control hitech-tech-next"
+                    aria-label="Next project"
+                >
+                    →
+                </button>
+
+            </div>
+
+
+            <!-- Auto play progress -->
+            <div class="hitech-tech-progress">
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="hitech-home-footer">
+
+    <div class="hitech-home-container">
+
+        <div class="hitech-home-footer-top">
+
+            <span>
+                HITECH
+            </span>
+
+            <i></i>
+
+            <span>
+                CONNECTING BUSINESS.
+                POWERING INNOVATION.
+            </span>
+
+        </div>
+
+
+        <div class="hitech-home-footer-main">
+
+
+            <div class="hitech-home-footer-brand">
+
+                <img
+                    src="img/HiTECHLOGO2.png"
+                    alt="HiTECH"
+                >
+
+                <p>
+                    Connecting businesses, technology and
+                    global opportunities through practical
+                    solutions.
+                </p>
+
+            </div>
+
+
+            <div class="hitech-home-footer-column">
+
+                <span>
+                    COMPANY
+                </span>
+
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="hitech-home-footer-column">
+
+                <span>
+                    SERVICES
+                </span>
+
+                <a href="services.html">
+                    Procurement &amp; Sourcing
+                </a>
+
+                <a href="services.html">
+                    Foreign Exchange
+                </a>
+
+                <a href="services.html">
+                    Goods Clearance
+                </a>
+
+                <a href="services.html">
+                    UX/UI Design
+                </a>
+
+                <a href="services.html">
+                    Digital Solutions
+                </a>
+
+            </div>
+
+
+            <div class="hitech-home-footer-column">
+
+                <span>
+                    CONNECT
+                </span>
+
+                <a href="tel:+2348033481883">
+                    <i class="bi bi-telephone"></i>
+                    +234 803 348 1883
+                </a>
+
+                <a
+                    href="https://wa.me/8619881201496"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <i class="bi bi-whatsapp"></i>
+                    +86 198 812 01496
+                </a>
+
+                <a href="mailto:info@hitechnglimited">
+                    <i class="bi bi-envelope"></i>
+                    info@hitechnglimited
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hitech-home-footer-bottom">
+
+            <span>
+                © 2026 HiTECH. All Rights Reserved.
+            </span>
+
+            <span>
+                TECHNOLOGY / BUSINESS / OPPORTUNITY
+            </span>
+
+            <span>
+                HITECH / 001
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+
+<button
+    type="button"
+    id="hitechHomeBackTop"
+    class="hitech-home-back-top"
+    aria-label="Back to top"
+>
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+
+</div>
+
+
+
+</body>
+
+</html>
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiTECH About The Tech</title>
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="header-inner">
+
+      <!-- LEFT: Nav links -->
+      <nav class="header-nav">
+        <a href="product.html">Products</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="uiuxdesign.html">UI/UXDesign</a>
+        <a href="tech.html">Tech</a>
+      </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<nav class="mobile-menu" id="mobileMenu">
+
+    <a href="product.html"><i class="fas fa-box"></i><span>Products</span></a>
+
+    <a href="service.html"><i class="fas fa-cogs"></i><span>Services</span></a>
+
+    <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+
+    <a href="uiuxdesign.html"><i class="fas fa-palette"></i><span>UI/UXDesign</span></a>
+
+    <a href="tech.html"><i class="fas fa-info-circle"></i><span>Tech</span></a>
+
+</nav>
+
+      <div class="menu-overlay" id="menuOverlay"></div>
+
+      <!-- CENTER: Logo -->
+<div class="header-logo">
+    <a href="./index.html" class="hitech-logo-link" aria-label="Home">
+        <img src="./img/HiTECH.png" alt="HiTECH" class="logo-img">
+    </a>
+</div>
+
+      <!-- RIGHT: Language -->
+      <div class="header-right">
+        <button class="lang-btn" id="langBtn" onclick="toggleLang()">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="1"/>
+            <ellipse cx="7.5" cy="7.5" rx="2.8" ry="6.5" stroke="currentColor" stroke-width="1"/>
+            <line x1="1" y1="5.5" x2="14" y2="5.5" stroke="currentColor" stroke-width="1"/>
+            <line x1="1" y1="9.5" x2="14" y2="9.5" stroke="currentColor" stroke-width="1"/>
+          </svg>
+          <span id="currentLang">EN</span>
+          <svg class="chev" viewBox="0 0 9 9" fill="none" width="9" height="9">
+            <polyline points="1.5,3 4.5,6.5 7.5,3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="lang-menu" id="langMenu">
+          <a href="#" class="active" onclick="selectLang(event,'EN')">🌐 Global · English</a>
+          <a href="#" onclick="selectLang(event,'中文')">🇨🇳 China · 简体中文</a>
+          <a href="#" onclick="selectLang(event,'FR')">🇫🇷 France · Français</a>
+          <a href="#" onclick="selectLang(event,'DE')">🇩🇪 Germany · Deutsch</a>
+          <a href="#" onclick="selectLang(event,'AR')">🇸🇦 Arabic · العربية</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+      >
+
+      <title>
+          About | HAZOOND INTERFACE TECHNOLOGY NG LTD
+      </title>
+
+      <meta
+          name="description"
+          content="Learn about HAZOOND INTERFACE TECHNOLOGY NG LTD, connecting business, technology, trade and global opportunities through modern solutions."
+      >
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+      >
+
+      <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      >
+
+      <link
+          rel="stylesheet"
+          href="css/hazoond-about.css"
+      >
+  </head>
+
+  <body>
+
+  <main class="haz-about-root" id="hazAboutPage">
+
+      <!-- =====================================================
+           BACKGROUND DECORATION
+      ====================================================== -->
+
+      <div
+          class="haz-about-global-grid"
+          aria-hidden="true"
+      ></div>
+
+      <div
+          class="haz-about-global-glow haz-about-global-glow-a"
+          aria-hidden="true"
+      ></div>
+
+      <div
+          class="haz-about-global-glow haz-about-global-glow-b"
+          aria-hidden="true"
+      ></div>
+
+
+
+
+      <!-- =====================================================
+           HERO
+      ====================================================== -->
+
+      <section class="haz-about-hero">
+
+          <div
+              class="haz-about-hero-grid"
+              aria-hidden="true"
+          ></div>
+
+          <div
+              class="haz-about-hero-orbit haz-about-hero-orbit-one"
+              aria-hidden="true"
+          ></div>
+
+          <div
+              class="haz-about-hero-orbit haz-about-hero-orbit-two"
+              aria-hidden="true"
+          ></div>
+
+          <div
+              class="haz-about-hero-orbit haz-about-hero-orbit-three"
+              aria-hidden="true"
+          ></div>
+
+
+          <div class="haz-about-shell haz-about-hero-layout">
+
+              <div class="haz-about-hero-copy">
+
+                  <div class="haz-about-kicker">
+                      <span></span>
+                      ABOUT THE COMPANY
+                  </div>
+
+                  <div class="haz-about-hero-code">
+                      HAZ / 001 / COMPANY PROFILE
+                  </div>
+
+                  <h1 class="haz-about-hero-title">
+
+                      <span>
+                          Connecting
+                      </span>
+
+                      <span class="is-soft">
+                          Opportunity.
+                      </span>
+
+                      <span>
+                          Building
+                      </span>
+
+                      <span class="is-soft">
+                          Possibility.
+                      </span>
+
+                  </h1>
+
+
+                  <p class="haz-about-hero-description">
+
+                      HAZOOND INTERFACE TECHNOLOGY NG LTD brings
+                      business services, technology, sourcing and
+                      international opportunities together to help
+                      people and businesses move forward.
+
+                  </p>
+
+
+                  <div class="haz-about-hero-actions">
+
+                      <a
+                          href="#hazAboutStory"
+                          class="haz-about-primary-button"
+                      >
+                          Discover Our Story
+                          <i class="bi bi-arrow-down-right"></i>
+                      </a>
+
+                      <a
+                          href="contact.html"
+                          class="haz-about-outline-button"
+                      >
+                          Contact Us
+                      </a>
+
+                  </div>
+
+
+                  <div class="haz-about-hero-bottom">
+
+                      <div>
+                          <span>BUSINESS</span>
+                          <strong>CONNECTION</strong>
+                      </div>
+
+                      <div>
+                          <span>TECHNOLOGY</span>
+                          <strong>INNOVATION</strong>
+                      </div>
+
+                      <div>
+                          <span>GLOBAL</span>
+                          <strong>OPPORTUNITY</strong>
+                      </div>
+
+                  </div>
+
+              </div>
+
+
+              <!-- HERO VISUAL -->
+
+              <div class="haz-about-hero-visual">
+
+                  <div
+                      class="haz-about-hero-frame"
+                  >
+
+                      <div
+                          class="haz-about-frame-mark frame-mark-tl"
+                          aria-hidden="true"
+                      ></div>
+
+                      <div
+                          class="haz-about-frame-mark frame-mark-tr"
+                          aria-hidden="true"
+                      ></div>
+
+                      <div
+                          class="haz-about-frame-mark frame-mark-bl"
+                          aria-hidden="true"
+                      ></div>
+
+                      <div
+                          class="haz-about-frame-mark frame-mark-br"
+                          aria-hidden="true"
+                      ></div>
+
+
+                      <div class="haz-about-hero-frame-label">
+                          HAZOOND / INTERFACE / TECHNOLOGY
+                      </div>
+
+
+                      <div
+                          class="haz-about-hero-circle"
+                      >
+
+                          <div class="haz-about-hero-circle-inner">
+
+                              <img
+                                  src="img/HiTECHLOGO1.png"
+                                  alt="HAZOOND INTERFACE TECHNOLOGY NG LTD"
+                              >
+
+                              <span>
+                                  BUSINESS × TECHNOLOGY
+                              </span>
+
+                          </div>
+
+                      </div>
+
+
+                      <div
+                          class="haz-about-hero-floating-card hero-card-a"
+                      >
+
+                          <div class="haz-about-floating-icon">
+                              <i class="bi bi-globe2"></i>
+                          </div>
+
+                          <div>
+                              <span>GLOBAL</span>
+                              <strong>CONNECTION</strong>
+                          </div>
+
+                      </div>
+
+
+                      <div
+                          class="haz-about-hero-floating-card hero-card-b"
+                      >
+
+                          <div class="haz-about-floating-icon">
+                              <i class="bi bi-cpu"></i>
+                          </div>
+
+                          <div>
+                              <span>DIGITAL</span>
+                              <strong>TECHNOLOGY</strong>
+                          </div>
+
+                      </div>
+
+
+                      <div class="haz-about-hero-axis axis-x"></div>
+                      <div class="haz-about-hero-axis axis-y"></div>
+
+                      <div class="haz-about-coordinate">
+                          09°04'N / 07°29'E
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           STORY
+      ====================================================== -->
+
+      <section
+          class="haz-about-story"
+          id="hazAboutStory"
+      >
+
+          <div
+              class="haz-about-story-ghost"
+              aria-hidden="true"
+          >
+              STORY
+          </div>
+
+          <div class="haz-about-shell">
+
+              <div class="haz-about-section-intro">
+
+                  <div class="haz-about-section-label">
+                      <span>01</span>
+                      OUR STORY
+                  </div>
+
+                  <div class="haz-about-section-line"></div>
+
+              </div>
+
+
+              <div class="haz-about-story-grid">
+
+                  <div class="haz-about-story-heading">
+
+                      <h2>
+                          A bridge between
+                          <span>
+                              opportunity and possibility.
+                          </span>
+                      </h2>
+
+                  </div>
+
+
+                  <div class="haz-about-story-copy">
+
+                      <p class="haz-about-story-lead">
+
+                          Every business begins with a need,
+                          an idea or an opportunity.
+
+                      </p>
+
+                      <p>
+
+                          HAZOOND INTERFACE TECHNOLOGY NG LTD
+                          exists to make the path from that
+                          opportunity to a practical solution
+                          simpler, more connected and more useful.
+
+                      </p>
+
+                      <p>
+
+                          We bring together procurement and
+                          sourcing, foreign exchange, goods
+                          clearance and digital technology so
+                          that people and businesses can access
+                          the products, services and opportunities
+                          they need to keep moving.
+
+                      </p>
+
+                      <div class="haz-about-story-signature">
+
+                          <span>
+                              OUR APPROACH
+                          </span>
+
+                          <strong>
+                              ACCESS → CONNECTION → GROWTH
+                          </strong>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+
+              <div class="haz-about-story-principles">
+
+                  <div class="haz-about-story-principle">
+                      <span>01</span>
+                      <strong>ACCESS</strong>
+                      <p>
+                          Make useful products, services and opportunities easier to reach.
+                      </p>
+                  </div>
+
+                  <div class="haz-about-story-principle">
+                      <span>02</span>
+                      <strong>CONNECTION</strong>
+                      <p>
+                          Bring people, businesses, technology and markets closer together.
+                      </p>
+                  </div>
+
+                  <div class="haz-about-story-principle">
+                      <span>03</span>
+                      <strong>MOVEMENT</strong>
+                      <p>
+                          Help ideas, products and business objectives move forward.
+                      </p>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           WHO WE ARE
+      ====================================================== -->
+
+      <section class="haz-about-who">
+
+          <div class="haz-about-shell haz-about-who-grid-layout">
+
+              <div class="haz-about-who-visual">
+
+                  <div class="haz-about-who-architecture">
+
+                      <div class="haz-about-who-grid"></div>
+
+                      <div class="haz-about-who-ring ring-large"></div>
+                      <div class="haz-about-who-ring ring-small"></div>
+
+                      <div class="haz-about-who-core">
+                          <span>HAZ</span>
+                          <strong>+</strong>
+                          <span>TECH</span>
+                      </div>
+
+                      <div class="haz-about-who-tag tag-one">
+                          BUSINESS
+                      </div>
+
+                      <div class="haz-about-who-tag tag-two">
+                          TECHNOLOGY
+                      </div>
+
+                      <div class="haz-about-who-tag tag-three">
+                          TRADE
+                      </div>
+
+                      <div class="haz-about-who-vertical">
+                          HAZOOND / SYSTEM
+                      </div>
+
+                  </div>
+
+              </div>
+
+
+              <div class="haz-about-who-copy">
+
+                  <div class="haz-about-section-label">
+                      <span>02</span>
+                      WHO WE ARE
+                  </div>
+
+                  <h2>
+                      Business solutions
+                      <span>
+                          built for a changing world.
+                      </span>
+                  </h2>
+
+                  <p>
+
+                      HAZOOND INTERFACE TECHNOLOGY NG LTD
+                      is a modern business and technology company
+                      focused on helping individuals and businesses
+                      access practical services, products,
+                      technology and international opportunities.
+
+                  </p>
+
+                  <p>
+
+                      Our capabilities bring together procurement
+                      and sourcing, foreign exchange services,
+                      goods clearance, UX/UI design, web
+                      applications, mobile applications and
+                      digital business solutions.
+
+                  </p>
+
+
+                  <div class="haz-about-check-list">
+
+                      <div>
+                          <span class="check-icon">
+                              <i class="bi bi-check"></i>
+                          </span>
+
+                          <span>
+                              Reliable business solutions
+                          </span>
+                      </div>
+
+                      <div>
+                          <span class="check-icon">
+                              <i class="bi bi-check"></i>
+                          </span>
+
+                          <span>
+                              Technology-driven services
+                          </span>
+                      </div>
+
+                      <div>
+                          <span class="check-icon">
+                              <i class="bi bi-check"></i>
+                          </span>
+
+                          <span>
+                              International business connections
+                          </span>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           MISSION / VISION
+      ====================================================== -->
+
+      <section class="haz-about-direction">
+
+          <div class="haz-about-shell">
+
+              <div class="haz-about-direction-header">
+
+                  <div class="haz-about-section-label">
+                      <span>03</span>
+                      OUR DIRECTION
+                  </div>
+
+                  <p>
+                      What we are building and why it matters.
+                  </p>
+
+              </div>
+
+
+              <div class="haz-about-direction-grid">
+
+
+                  <!-- MISSION -->
+
+                  <article class="haz-about-direction-card">
+
+                      <div class="haz-about-direction-top">
+
+                          <div class="haz-about-round-icon">
+                              <i class="bi bi-bullseye"></i>
+                          </div>
+
+                          <span>
+                              01 / MISSION
+                          </span>
+
+                      </div>
+
+
+                      <h3>
+                          Creating access
+                          to better
+                          <span>opportunities.</span>
+                      </h3>
+
+
+                      <p>
+
+                          To connect businesses and individuals
+                          with reliable services, global
+                          opportunities, innovative technology
+                          and efficient solutions that create
+                          sustainable value.
+
+                      </p>
+
+
+                      <div class="haz-about-direction-number">
+                          01
+                      </div>
+
+                  </article>
+
+
+                  <!-- VISION -->
+
+                  <article
+                      class="haz-about-direction-card direction-card-dark"
+                  >
+
+                      <div class="haz-about-direction-top">
+
+                          <div class="haz-about-round-icon">
+                              <i class="bi bi-eye"></i>
+                          </div>
+
+                          <span>
+                              02 / VISION
+                          </span>
+
+                      </div>
+
+
+                      <h3>
+                          A trusted bridge
+                          between business
+                          and <span>innovation.</span>
+                      </h3>
+
+
+                      <p>
+
+                          We aim to become a trusted and innovative
+                          company connecting businesses, technology,
+                          trade and global opportunities through
+                          modern solutions.
+
+                      </p>
+
+
+                      <div class="haz-about-direction-number">
+                          02
+                      </div>
+
+                  </article>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           SERVICES
+      ====================================================== -->
+
+      <section class="haz-about-services">
+
+          <div class="haz-about-services-ghost">
+              SERVICES
+          </div>
+
+          <div class="haz-about-shell">
+
+              <div class="haz-about-services-header">
+
+                  <div>
+
+                      <div class="haz-about-section-label">
+                          <span>04</span>
+                          WHAT WE DO
+                      </div>
+
+                      <h2>
+                          Solutions designed
+                          <span>
+                              around your needs.
+                          </span>
+                      </h2>
+
+                  </div>
+
+                  <p>
+
+                      From international business services
+                      to digital technology, we create practical
+                      solutions for modern businesses.
+
+                  </p>
+
+              </div>
+
+
+              <div class="haz-about-services-list">
+
+
+                  <a
+                      href="services.html"
+                      class="haz-about-service-item"
+                  >
+
+                      <span class="service-number">
+                          01
+                      </span>
+
+                      <div class="service-main">
+                          <h3>
+                              Procurement &amp; Sourcing
+                          </h3>
+
+                          <p>
+                              Sourcing machinery, agricultural equipment,
+                              electronics, spare parts, automobiles,
+                              raw materials and other products.
+                          </p>
+                      </div>
+
+                      <span class="service-category">
+                          COMMERCE
+                      </span>
+
+                      <span class="service-arrow">
+                          ↗
+                      </span>
+
+                  </a>
+
+
+                  <a
+                      href="services.html"
+                      class="haz-about-service-item"
+                  >
+
+                      <span class="service-number">
+                          02
+                      </span>
+
+                      <div class="service-main">
+                          <h3>
+                              Foreign Exchange
+                          </h3>
+
+                          <p>
+                              Convenient and efficient currency
+                              exchange solutions for individuals
+                              and businesses.
+                          </p>
+                      </div>
+
+                      <span class="service-category">
+                          FINANCE
+                      </span>
+
+                      <span class="service-arrow">
+                          ↗
+                      </span>
+
+                  </a>
+
+
+                  <a
+                      href="services.html"
+                      class="haz-about-service-item"
+                  >
+
+                      <span class="service-number">
+                          03
+                      </span>
+
+                      <div class="service-main">
+                          <h3>
+                              Goods Clearance
+                          </h3>
+
+                          <p>
+                              Supporting goods and cargo clearance
+                              processes to help shipments move efficiently.
+                          </p>
+                      </div>
+
+                      <span class="service-category">
+                          LOGISTICS
+                      </span>
+
+                      <span class="service-arrow">
+                          ↗
+                      </span>
+
+                  </a>
+
+
+                  <a
+                      href="services.html"
+                      class="haz-about-service-item"
+                  >
+
+                      <span class="service-number">
+                          04
+                      </span>
+
+                      <div class="service-main">
+                          <h3>
+                              UX/UI Design
+                          </h3>
+
+                          <p>
+                              Creating intuitive interfaces and
+                              engaging digital experiences around
+                              real user needs.
+                          </p>
+                      </div>
+
+                      <span class="service-category">
+                          EXPERIENCE
+                      </span>
+
+                      <span class="service-arrow">
+                          ↗
+                      </span>
+
+                  </a>
+
+
+                  <a
+                      href="services.html"
+                      class="haz-about-service-item"
+                  >
+
+                      <span class="service-number">
+                          05
+                      </span>
+
+                      <div class="service-main">
+                          <h3>
+                              Web Applications
+                          </h3>
+
+                          <p>
+                              Responsive websites and scalable
+                              web applications for businesses
+                              and organizations.
+                          </p>
+                      </div>
+
+                      <span class="service-category">
+                          DIGITAL
+                      </span>
+
+                      <span class="service-arrow">
+                          ↗
+                      </span>
+
+                  </a>
+
+
+                  <a
+                      href="services.html"
+                      class="haz-about-service-item"
+                  >
+
+                      <span class="service-number">
+                          06
+                      </span>
+
+                      <div class="service-main">
+                          <h3>
+                              Android &amp; iOS Applications
+                          </h3>
+
+                          <p>
+                              Modern mobile applications built
+                              for Android and iOS platforms.
+                          </p>
+                      </div>
+
+                      <span class="service-category">
+                          MOBILE
+                      </span>
+
+                      <span class="service-arrow">
+                          ↗
+                      </span>
+
+                  </a>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           BUSINESS + TECHNOLOGY
+      ====================================================== -->
+
+      <section class="haz-about-equation">
+
+          <div class="haz-about-shell">
+
+              <div class="haz-about-equation-heading">
+
+                  <div class="haz-about-section-label light">
+                      <span>05</span>
+                      OUR CORE IDEA
+                  </div>
+
+                  <p>
+                      When business and technology move together,
+                      new possibilities emerge.
+                  </p>
+
+              </div>
+
+
+              <div class="haz-about-equation-stage">
+
+                  <div class="haz-about-equation-item">
+
+                      <div class="equation-icon">
+                          <i class="bi bi-briefcase"></i>
+                      </div>
+
+                      <span>
+                          BUSINESS
+                      </span>
+
+                  </div>
+
+
+                  <div class="haz-about-equation-symbol">
+                      +
+                  </div>
+
+
+                  <div class="haz-about-equation-item">
+
+                      <div class="equation-icon">
+                          <i class="bi bi-cpu"></i>
+                      </div>
+
+                      <span>
+                          TECHNOLOGY
+                      </span>
+
+                  </div>
+
+
+                  <div class="haz-about-equation-symbol">
+                      =
+                  </div>
+
+
+                  <div class="haz-about-equation-item equation-highlight">
+
+                      <div class="equation-icon">
+                          <i class="bi bi-lightbulb"></i>
+                      </div>
+
+                      <span>
+                          INNOVATION
+                      </span>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           WHY HAZOOND
+      ====================================================== -->
+
+      <section class="haz-about-values">
+
+          <div class="haz-about-shell">
+
+              <div class="haz-about-values-heading">
+
+                  <div>
+
+                      <div class="haz-about-section-label">
+                          <span>06</span>
+                          WHY HAZOOND
+                      </div>
+
+                      <h2>
+                          What we bring
+                          <span>
+                              to the table.
+                          </span>
+                      </h2>
+
+                  </div>
+
+                  <p>
+                      Practical services, modern technology,
+                      clear communication and dependable execution.
+                  </p>
+
+              </div>
+
+
+              <div class="haz-about-values-stage">
+
+                  <button
+                      type="button"
+                      class="haz-about-value-card is-active"
+                      data-value="reliability"
+                  >
+
+                      <span>01</span>
+
+                      <i class="bi bi-shield-check"></i>
+
+                      <strong>
+                          Reliability
+                      </strong>
+
+                  </button>
+
+
+                  <button
+                      type="button"
+                      class="haz-about-value-card"
+                      data-value="innovation"
+                  >
+
+                      <span>02</span>
+
+                      <i class="bi bi-lightbulb"></i>
+
+                      <strong>
+                          Innovation
+                      </strong>
+
+                  </button>
+
+
+                  <button
+                      type="button"
+                      class="haz-about-value-card"
+                      data-value="global"
+                  >
+
+                      <span>03</span>
+
+                      <i class="bi bi-globe2"></i>
+
+                      <strong>
+                          Global Connection
+                      </strong>
+
+                  </button>
+
+
+                  <button
+                      type="button"
+                      class="haz-about-value-card"
+                      data-value="customer"
+                  >
+
+                      <span>04</span>
+
+                      <i class="bi bi-people"></i>
+
+                      <strong>
+                          Customer Focus
+                      </strong>
+
+                  </button>
+
+
+                  <button
+                      type="button"
+                      class="haz-about-value-card"
+                      data-value="professional"
+                  >
+
+                      <span>05</span>
+
+                      <i class="bi bi-award"></i>
+
+                      <strong>
+                          Professionalism
+                      </strong>
+
+                  </button>
+
+
+                  <button
+                      type="button"
+                      class="haz-about-value-card"
+                      data-value="technology"
+                  >
+
+                      <span>06</span>
+
+                      <i class="bi bi-cpu"></i>
+
+                      <strong>
+                          Technology Driven
+                      </strong>
+
+                  </button>
+
+              </div>
+
+
+              <div class="haz-about-value-detail">
+
+                  <span class="haz-about-value-detail-label">
+                      SELECTED PRINCIPLE
+                  </span>
+
+                  <h3
+                      id="hazAboutValueTitle"
+                  >
+                      Reliability
+                  </h3>
+
+                  <p
+                      id="hazAboutValueDescription"
+                  >
+                      We focus on dependable services and professional
+                      solutions.
+                  </p>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           TECHNOLOGY
+      ====================================================== -->
+
+      <section class="haz-about-tech">
+
+          <div class="haz-about-shell haz-about-tech-layout">
+
+              <div class="haz-about-tech-copy">
+
+                  <div class="haz-about-section-label">
+                      <span>07</span>
+                      DIGITAL TECHNOLOGY
+                  </div>
+
+                  <h2>
+                      Technology that
+                      <span>
+                          moves business forward.
+                      </span>
+                  </h2>
+
+                  <p>
+
+                      HAZOOND develops digital experiences and
+                      applications designed to help businesses
+                      operate, communicate and grow in a
+                      connected world.
+
+                  </p>
+
+
+                  <div class="haz-about-tech-list">
+
+                      <span>
+                          <i class="bi bi-check2"></i>
+                          Web Applications
+                      </span>
+
+                      <span>
+                          <i class="bi bi-check2"></i>
+                          Android Applications
+                      </span>
+
+                      <span>
+                          <i class="bi bi-check2"></i>
+                          iOS Applications
+                      </span>
+
+                      <span>
+                          <i class="bi bi-check2"></i>
+                          UX/UI Design
+                      </span>
+
+                      <span>
+                          <i class="bi bi-check2"></i>
+                          E-commerce Platforms
+                      </span>
+
+                      <span>
+                          <i class="bi bi-check2"></i>
+                          Digital Business Solutions
+                      </span>
+
+                  </div>
+
+              </div>
+
+
+              <div class="haz-about-device-stage">
+
+                  <div class="haz-about-device-grid"></div>
+
+                  <div class="haz-about-device-orbit orbit-1"></div>
+                  <div class="haz-about-device-orbit orbit-2"></div>
+
+                  <div class="haz-about-laptop">
+
+                      <div class="haz-about-laptop-top">
+
+                          <div class="haz-about-laptop-screen">
+
+                              <div class="haz-about-screen-header">
+                                  HAZOOND
+                              </div>
+
+                              <div class="haz-about-screen-body">
+
+                                  <img
+                                      src="img/HiTECHLOGO1.png"
+                                      alt="HAZOOND interface"
+                                  >
+
+                                  <div class="haz-about-screen-lines">
+                                      <span></span>
+                                      <span></span>
+                                      <span></span>
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                      <div class="haz-about-laptop-base"></div>
+
+                  </div>
+
+
+                  <div class="haz-about-phone">
+
+                      <div class="haz-about-phone-screen">
+
+                          <span>
+                              HAZ
+                          </span>
+
+                          <strong>
+                              TECH
+                          </strong>
+
+                      </div>
+
+                  </div>
+
+
+                  <div class="haz-about-device-tag">
+                      DIGITAL / 07
+                  </div>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           GLOBAL BUSINESS
+      ====================================================== -->
+
+      <section class="haz-about-global">
+
+          <div class="haz-about-global-grid"></div>
+
+          <div
+              class="haz-about-global-orbit global-ring-a"
+              aria-hidden="true"
+          ></div>
+
+          <div
+              class="haz-about-global-orbit global-ring-b"
+              aria-hidden="true"
+          ></div>
+
+          <div class="haz-about-shell haz-about-global-layout">
+
+              <div class="haz-about-global-copy">
+
+                  <div class="haz-about-section-label light">
+                      <span>08</span>
+                      GLOBAL BUSINESS
+                  </div>
+
+                  <h2>
+                      Connecting
+                      opportunities
+                      <span>
+                          beyond borders.
+                      </span>
+                  </h2>
+
+                  <p>
+
+                      From international sourcing and foreign
+                      exchange to goods clearance and digital
+                      services, HAZOOND helps bridge the gap
+                      between local business needs and global
+                      opportunities.
+
+                  </p>
+
+                  <a
+                      href="contact.html"
+                      class="haz-about-primary-button light"
+                  >
+                      Start a Conversation
+                      <i class="bi bi-arrow-up-right"></i>
+                  </a>
+
+              </div>
+
+
+              <div class="haz-about-global-visual">
+
+                  <div class="haz-about-global-core">
+
+                      <div class="global-core-inner">
+                          <span>HAZOOND</span>
+                          <strong>GLOBAL</strong>
+                          <small>
+                              CONNECTIVITY SYSTEM
+                          </small>
+                      </div>
+
+                  </div>
+
+
+                  <div class="haz-about-global-node node-a">
+                      <i class="bi bi-box-seam"></i>
+                      SOURCING
+                  </div>
+
+                  <div class="haz-about-global-node node-b">
+                      <i class="bi bi-currency-exchange"></i>
+                      FX
+                  </div>
+
+                  <div class="haz-about-global-node node-c">
+                      <i class="bi bi-truck"></i>
+                      CLEARANCE
+                  </div>
+
+                  <div class="haz-about-global-node node-d">
+                      <i class="bi bi-globe2"></i>
+                      TRADE
+                  </div>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           VALUES
+      ====================================================== -->
+
+      <section class="haz-about-core-values">
+
+          <div class="haz-about-shell">
+
+              <div class="haz-about-core-header">
+
+                  <div class="haz-about-section-label">
+                      <span>09</span>
+                      OUR VALUES
+                  </div>
+
+                  <h2>
+                      What guides
+                      <span>
+                          everything we do.
+                      </span>
+                  </h2>
+
+              </div>
+
+
+              <div class="haz-about-core-values-grid">
+
+                  <div class="haz-about-core-value">
+                      <span>01</span>
+                      <strong>Integrity</strong>
+                  </div>
+
+                  <div class="haz-about-core-value">
+                      <span>02</span>
+                      <strong>Innovation</strong>
+                  </div>
+
+                  <div class="haz-about-core-value">
+                      <span>03</span>
+                      <strong>Excellence</strong>
+                  </div>
+
+                  <div class="haz-about-core-value">
+                      <span>04</span>
+                      <strong>Reliability</strong>
+                  </div>
+
+                  <div class="haz-about-core-value">
+                      <span>05</span>
+                      <strong>Transparency</strong>
+                  </div>
+
+                  <div class="haz-about-core-value">
+                      <span>06</span>
+                      <strong>Customer Satisfaction</strong>
+                  </div>
+
+                  <div class="haz-about-core-value">
+                      <span>07</span>
+                      <strong>Growth</strong>
+                  </div>
+
+                  <div class="haz-about-core-value">
+                      <span>08</span>
+                      <strong>Collaboration</strong>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           PROCESS
+      ====================================================== -->
+
+      <section class="haz-about-process">
+
+          <div class="haz-about-process-ghost">
+              PROCESS
+          </div>
+
+          <div class="haz-about-shell">
+
+              <div class="haz-about-process-heading">
+
+                  <div class="haz-about-section-label">
+                      <span>10</span>
+                      HOW WE WORK
+                  </div>
+
+                  <h2>
+                      Simple.
+                      Clear.
+                      <span>
+                          Effective.
+                      </span>
+                  </h2>
+
+              </div>
+
+
+              <div class="haz-about-process-track">
+
+                  <div class="haz-about-process-line"></div>
+
+
+                  <article class="haz-about-process-step">
+
+                      <div class="process-point">
+                          01
+                      </div>
+
+                      <i class="bi bi-search"></i>
+
+                      <span>
+                          DISCOVER
+                      </span>
+
+                      <p>
+                          We understand your needs and objectives.
+                      </p>
+
+                  </article>
+
+
+                  <article class="haz-about-process-step">
+
+                      <div class="process-point">
+                          02
+                      </div>
+
+                      <i class="bi bi-diagram-3"></i>
+
+                      <span>
+                          PLAN
+                      </span>
+
+                      <p>
+                          We develop the right strategy and solution.
+                      </p>
+
+                  </article>
+
+
+                  <article class="haz-about-process-step">
+
+                      <div class="process-point">
+                          03
+                      </div>
+
+                      <i class="bi bi-rocket-takeoff"></i>
+
+                      <span>
+                          EXECUTE
+                      </span>
+
+                      <p>
+                          We deliver the service or technology solution.
+                      </p>
+
+                  </article>
+
+
+                  <article class="haz-about-process-step">
+
+                      <div class="process-point">
+                          04
+                      </div>
+
+                      <i class="bi bi-headset"></i>
+
+                      <span>
+                          SUPPORT
+                      </span>
+
+                      <p>
+                          We remain available to support your journey.
+                      </p>
+
+                  </article>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           FINAL CTA
+      ====================================================== -->
+
+      <section class="haz-about-final">
+
+          <div class="haz-about-final-grid"></div>
+
+          <div
+              class="haz-about-final-orbit orbit-final-a"
+              aria-hidden="true"
+          ></div>
+
+          <div
+              class="haz-about-final-orbit orbit-final-b"
+              aria-hidden="true"
+          ></div>
+
+          <div class="haz-about-shell">
+
+              <div class="haz-about-final-content">
+
+                  <div class="haz-about-section-label light">
+                      <span>11</span>
+                      LET'S CONNECT
+                  </div>
+
+                  <div class="haz-about-final-company">
+                      HAZOOND INTERFACE TECHNOLOGY NG LTD
+                  </div>
+
+                  <h2>
+                      Let's build
+                      <span>
+                          something better.
+                      </span>
+                  </h2>
+
+                  <p>
+                      Connecting Business. Powering Innovation.
+                  </p>
+
+
+                  <div class="haz-about-final-actions">
+
+                      <a
+                          href="contact.html"
+                          class="haz-about-final-primary"
+                      >
+                          Contact Us
+                          <i class="bi bi-arrow-up-right"></i>
+                      </a>
+
+                      <a
+                          href="services.html"
+                          class="haz-about-final-secondary"
+                      >
+                          Explore Services
+                      </a>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           FOOTER
+      ====================================================== -->
+
+      <footer class="haz-about-footer">
+
+          <div class="haz-about-shell">
+
+              <div class="haz-about-footer-top">
+
+                  <div class="haz-about-footer-brand">
+
+                      <img
+                          src="img/HiTECHLOGO2.png"
+                          alt="HAZOOND INTERFACE TECHNOLOGY NG LTD"
+                      >
+
+                      <h3>
+                          HAZOOND INTERFACE TECHNOLOGY NG LTD
+                      </h3>
+
+                      <p>
+                          Connecting businesses, technology and
+                          global opportunities through reliable
+                          and innovative solutions.
+                      </p>
+
+                      <strong>
+                          Connecting Business. Powering Innovation.
+                      </strong>
+
+                  </div>
+
+
+                  <div class="haz-about-footer-column">
+
+                      <h4>
+                          Company
+                      </h4>
+
+                      <a href="index.html">
+                          Home
+                      </a>
+
+                      <a href="products.html">
+                          Products
+                      </a>
+
+                      <a href="services.html">
+                          Services
+                      </a>
+
+                      <a href="about.html">
+                          About
+                      </a>
+
+                      <a href="contact.html">
+                          Contact
+                      </a>
+
+                  </div>
+
+
+                  <div class="haz-about-footer-column">
+
+                      <h4>
+                          Services
+                      </h4>
+
+                      <span>
+                          Procurement &amp; Sourcing
+                      </span>
+
+                      <span>
+                          Foreign Exchange
+                      </span>
+
+                      <span>
+                          Goods Clearance
+                      </span>
+
+                      <span>
+                          UX/UI Design
+                      </span>
+
+                      <span>
+                          Web &amp; Mobile Applications
+                      </span>
+
+                  </div>
+
+
+                  <div class="haz-about-footer-column">
+
+                      <h4>
+                          Contact
+                      </h4>
+
+                      <a href="tel:+2348033481883">
+                          +234 803 348 1883
+                      </a>
+
+                      <a
+                          href="https://wa.me/8619881201496"
+                          target="_blank"
+                          rel="noopener"
+                      >
+                          +86 198 812 01496
+                      </a>
+
+                      <a href="mailto:info@hitechnglimited">
+                          info@hitechnglimited
+                      </a>
+
+                  </div>
+
+              </div>
+
+
+              <div class="haz-about-footer-bottom">
+
+                  <span>
+                      © <span id="hazAboutYear"></span>
+                      HAZOOND INTERFACE TECHNOLOGY NG LTD
+                  </span>
+
+                  <span>
+                      ALL RIGHTS RESERVED
+                  </span>
+
+              </div>
+
+          </div>
+
+      </footer>
+
+
+      <!-- =====================================================
+           BACK TO TOP
+      ====================================================== -->
+
+      <button
+          type="button"
+          class="haz-about-back-top"
+          id="hazAboutBackTop"
+          aria-label="Back to top"
+      >
+          <i class="bi bi-arrow-up"></i>
+      </button>
+
+  </main>
+
+
+  <script src="js/hazoond-about.js"></script>
+
+  </body>
+  </html>

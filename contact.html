@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiTECH Contact</title>
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="header-inner">
+
+      <!-- LEFT: Nav links -->
+      <nav class="header-nav">
+        <a href="product.html">Products</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="uiuxdesign.html">UI/UXDesign</a>
+        <a href="tech.html">Tech</a>
+      </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<nav class="mobile-menu" id="mobileMenu">
+
+    <a href="product.html"><i class="fas fa-box"></i><span>Products</span></a>
+
+    <a href="service.html"><i class="fas fa-cogs"></i><span>Services</span></a>
+
+    <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+
+    <a href="uiuxdesign.html"><i class="fas fa-palette"></i><span>UI/UXDesign</span></a>
+
+    <a href="tech.html"><i class="fas fa-info-circle"></i><span>Tech</span></a>
+
+</nav>
+
+      <div class="menu-overlay" id="menuOverlay"></div>
+
+      <!-- CENTER: Logo -->
+<div class="header-logo">
+    <a href="./index.html" class="hitech-logo-link" aria-label="Home">
+        <img src="./img/HiTECH.png" alt="HiTECH" class="logo-img">
+    </a>
+</div>
+
+      <!-- RIGHT: Language -->
+      <div class="header-right">
+        <button class="lang-btn" id="langBtn" onclick="toggleLang()">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="1"/>
+            <ellipse cx="7.5" cy="7.5" rx="2.8" ry="6.5" stroke="currentColor" stroke-width="1"/>
+            <line x1="1" y1="5.5" x2="14" y2="5.5" stroke="currentColor" stroke-width="1"/>
+            <line x1="1" y1="9.5" x2="14" y2="9.5" stroke="currentColor" stroke-width="1"/>
+          </svg>
+          <span id="currentLang">EN</span>
+          <svg class="chev" viewBox="0 0 9 9" fill="none" width="9" height="9">
+            <polyline points="1.5,3 4.5,6.5 7.5,3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="lang-menu" id="langMenu">
+          <a href="#" class="active" onclick="selectLang(event,'EN')">🌐 Global · English</a>
+          <a href="#" onclick="selectLang(event,'中文')">🇨🇳 China · 简体中文</a>
+          <a href="#" onclick="selectLang(event,'FR')">🇫🇷 France · Français</a>
+          <a href="#" onclick="selectLang(event,'DE')">🇩🇪 Germany · Deutsch</a>
+          <a href="#" onclick="selectLang(event,'AR')">🇸🇦 Arabic · العربية</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- =========================================================
+       HERO
+  ========================================================= -->
+
+  <section class="contact-hero">
+
+      <div class="hero-glow"></div>
+
+      <div class="hero-orbit orbit-one"></div>
+
+      <div class="hero-orbit orbit-two"></div>
+
+
+      <div class="container">
+
+          <div class="hero-grid">
+
+
+              <!-- LEFT -->
+
+              <div class="hero-left">
+
+                  <div class="hero-small-title">
+
+                      <span></span>
+
+                      CONTACT US
+
+                  </div>
+
+
+                  <h1>
+
+                      Let's Start a
+
+                      <strong>
+                          Conversation
+                      </strong>
+
+                  </h1>
+
+
+                  <p>
+
+                      We're here to answer your questions,
+                      listen to your ideas, and help you
+                      achieve your goals.
+
+                  </p>
+
+              </div>
+
+
+
+              <!-- RIGHT SERVICES -->
+
+              <div class="hero-services">
+
+                  <div class="hero-service">
+
+                      <span class="check-icon">
+
+                          <i class="bi bi-check-lg"></i>
+
+                      </span>
+
+                      <span>
+                          Procurement &amp; Sourcing
+                      </span>
+
+                  </div>
+
+
+                  <div class="hero-service">
+
+                      <span class="check-icon">
+
+                          <i class="bi bi-check-lg"></i>
+
+                      </span>
+
+                      <span>
+                          Foreign Exchange (FX) Services
+                      </span>
+
+                  </div>
+
+
+                  <div class="hero-service">
+
+                      <span class="check-icon">
+
+                          <i class="bi bi-check-lg"></i>
+
+                      </span>
+
+                      <span>
+                          UX/UI Design
+                      </span>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       CONTACT CARDS
+  ========================================================= -->
+
+  <section class="contact-cards-section">
+
+      <div class="container">
+
+          <div class="row g-3">
+
+
+              <!-- PHONE -->
+
+              <div class="col-lg-4 col-md-6">
+
+                  <div class="contact-card">
+
+                      <div class="contact-card-icon">
+
+                          <i class="bi bi-telephone-fill"></i>
+
+                      </div>
+
+
+                      <div class="contact-card-content">
+
+                          <h3>
+                              Call Us
+                          </h3>
+
+                          <p>
+                              Speak directly with our team.
+                          </p>
+
+                          <a href="tel:+2348033481883">
+
+                              +234 803 348 1883
+
+                          </a>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+
+
+              <!-- WHATSAPP -->
+
+              <div class="col-lg-4 col-md-6">
+
+                  <div class="contact-card">
+
+                      <div class="contact-card-icon">
+
+                          <i class="bi bi-whatsapp"></i>
+
+                      </div>
+
+
+                      <div class="contact-card-content">
+
+                          <h3>
+                              WhatsApp
+                          </h3>
+
+                          <p>
+                              Chat with us on WhatsApp.
+                          </p>
+
+                          <a
+                              href="https://wa.me/8619881201496"
+                              target="_blank"
+                              rel="noopener">
+
+                              +86 198 812 01496
+
+                          </a>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+
+
+              <!-- EMAIL -->
+
+              <div class="col-lg-4 col-md-12">
+
+                  <div class="contact-card">
+
+                      <div class="contact-card-icon">
+
+                          <i class="bi bi-envelope-fill"></i>
+
+                      </div>
+
+
+                      <div class="contact-card-content">
+
+                          <h3>
+                              Email Us
+                          </h3>
+
+                          <p>
+                              Send us an email anytime.
+                          </p>
+
+                          <a href="mailto:info@hitechnglimited">
+
+                              info@hitechnglimited
+
+                          </a>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+
+          </div>
+
+      </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       MESSAGE + SERVICES
+  ========================================================= -->
+
+  <section class="message-section" id="message">
+
+      <div class="container">
+
+          <div class="message-wrapper">
+
+
+              <!-- =================================================
+                   LEFT FORM
+              ================================================== -->
+
+              <div class="message-form-area">
+
+                  <div class="section-heading">
+
+                      <h2>
+                          Send Us a Message
+                      </h2>
+
+                      <span class="heading-line"></span>
+
+                      <p>
+
+                          Fill out the form below and our
+                          team will get back to you as soon
+                          as possible.
+
+                      </p>
+
+                  </div>
+
+
+
+                  <!-- SUCCESS -->
+
+                  <div
+                      id="successMessage"
+                      class="form-alert success-alert">
+
+                      <i class="bi bi-check-circle-fill"></i>
+
+                      <div>
+
+                          <strong>
+                              Message sent successfully.
+                          </strong>
+
+                          <span>
+                              Thank you for contacting HiTECH.
+                          </span>
+
+                      </div>
+
+                  </div>
+
+
+
+                  <!-- ERROR -->
+
+                  <div
+                      id="errorMessage"
+                      class="form-alert error-alert">
+
+                      <i class="bi bi-exclamation-circle-fill"></i>
+
+                      <div>
+
+                          <strong>
+                              Message could not be sent.
+                          </strong>
+
+                          <span>
+                              Please try again.
+                          </span>
+
+                      </div>
+
+                  </div>
+
+
+
+                  <!-- FORM -->
+
+                  <form
+                      id="contactForm"
+                      action="https://formspree.io/f/xwvoweyn"
+                      method="POST"
+                      novalidate>
+
+
+                      <!-- NAME / EMAIL -->
+
+                      <div class="row g-3">
+
+
+                          <div class="col-md-6">
+
+                              <div class="input-group-custom">
+
+                                  <i class="bi bi-person"></i>
+
+                                  <input
+                                      type="text"
+                                      name="name"
+                                      id="name"
+                                      placeholder="Full Name"
+                                      required>
+
+                              </div>
+
+                              <small class="error-text"></small>
+
+                          </div>
+
+
+
+                          <div class="col-md-6">
+
+                              <div class="input-group-custom">
+
+                                  <i class="bi bi-envelope"></i>
+
+                                  <input
+                                      type="email"
+                                      name="email"
+                                      id="email"
+                                      placeholder="Email Address"
+                                      required>
+
+                              </div>
+
+                              <small class="error-text"></small>
+
+                          </div>
+
+
+
+                          <!-- PHONE -->
+
+                          <div class="col-md-6">
+
+                              <div class="input-group-custom">
+
+                                  <i class="bi bi-telephone"></i>
+
+                                  <input
+                                      type="tel"
+                                      name="phone"
+                                      id="phone"
+                                      placeholder="Phone Number">
+
+                              </div>
+
+                          </div>
+
+
+
+                          <!-- SERVICE -->
+
+                          <div class="col-md-6">
+
+                              <div class="input-group-custom select-input">
+
+                                  <i class="bi bi-grid"></i>
+
+                                  <select
+                                      name="service"
+                                      id="service"
+                                      required>
+
+                                      <option
+                                          value=""
+                                          selected
+                                          disabled>
+
+                                          Select a Service
+
+                                      </option>
+
+                                      <option>
+                                          Procurement &amp; Sourcing
+                                      </option>
+
+                                      <option>
+                                          Foreign Exchange (FX) Services
+                                      </option>
+
+                                      <option>
+                                          UX/UI Design
+                                      </option>
+
+                                      <option>
+                                          Web Application Development
+                                      </option>
+
+                                      <option>
+                                          Android Application
+                                      </option>
+
+                                      <option>
+                                          iOS Application
+                                      </option>
+
+                                      <option>
+                                          Goods Clearance
+                                      </option>
+
+                                      <option>
+                                          Other
+                                      </option>
+
+                                  </select>
+
+                                  <i class="bi bi-chevron-down select-arrow"></i>
+
+                              </div>
+
+                              <small class="error-text"></small>
+
+                          </div>
+
+
+
+                          <!-- SUBJECT -->
+
+                          <div class="col-12">
+
+                              <div class="input-group-custom">
+
+                                  <i class="bi bi-chat-square-text"></i>
+
+                                  <input
+                                      type="text"
+                                      name="subject"
+                                      id="subject"
+                                      placeholder="Subject"
+                                      required>
+
+                              </div>
+
+                              <small class="error-text"></small>
+
+                          </div>
+
+
+
+                          <!-- MESSAGE -->
+
+                          <div class="col-12">
+
+                              <div class="input-group-custom textarea-group">
+
+                                  <i class="bi bi-pencil"></i>
+
+                                  <textarea
+                                      name="message"
+                                      id="messageText"
+                                      rows="5"
+                                      placeholder="Your Message"
+                                      required></textarea>
+
+                              </div>
+
+                              <small class="error-text"></small>
+
+                          </div>
+
+
+
+                          <!-- SUBMIT -->
+
+                          <div class="col-12">
+
+                              <button
+                                  type="submit"
+                                  class="send-button"
+                                  id="sendButton">
+
+                                  <span id="sendText">
+                                      Send Message
+                                  </span>
+
+                                  <span
+                                      class="loading-text"
+                                      id="loadingText">
+
+                                      <span class="loading-spinner"></span>
+
+                                      Sending...
+
+                                  </span>
+
+                                  <i
+                                      class="bi bi-send"
+                                      id="sendIcon"></i>
+
+                              </button>
+
+                          </div>
+
+                      </div>
+
+
+                      <!-- PRIVACY -->
+
+                      <div class="privacy-note">
+
+                          <i class="bi bi-lock"></i>
+
+                          Your information is safe with us.
+                          We respect your privacy.
+
+                      </div>
+
+
+                      <input
+                          type="hidden"
+                          name="_subject"
+                          value="New HiTECH Website Contact">
+
+
+                  </form>
+
+              </div>
+
+
+
+              <!-- =================================================
+                   RIGHT SERVICES
+              ================================================== -->
+
+              <div class="what-we-do">
+
+                  <div class="section-heading">
+
+                      <h2>
+                          What We Do
+                      </h2>
+
+                      <span class="heading-line"></span>
+
+                  </div>
+
+
+
+                  <!-- SERVICE 1 -->
+
+                  <div class="service-row">
+
+                      <div class="service-icon">
+
+                          <i class="bi bi-box-seam"></i>
+
+                      </div>
+
+
+                      <div>
+
+                          <h4>
+                              Procurement &amp; Sourcing
+                          </h4>
+
+                          <p>
+
+                              We source quality products and
+                              raw materials from reliable
+                              global suppliers.
+
+                          </p>
+
+                      </div>
+
+                  </div>
+
+
+
+                  <!-- SERVICE 2 -->
+
+                  <div class="service-row">
+
+                      <div class="service-icon">
+
+                          <i class="bi bi-currency-exchange"></i>
+
+                      </div>
+
+
+                      <div>
+
+                          <h4>
+                              Foreign Exchange (FX) Services
+                          </h4>
+
+                          <p>
+
+                              Secure and efficient currency
+                              exchange solutions for individuals
+                              and businesses.
+
+                          </p>
+
+                      </div>
+
+                  </div>
+
+
+
+                  <!-- SERVICE 3 -->
+
+                  <div class="service-row">
+
+                      <div class="service-icon">
+
+                          <i class="bi bi-display"></i>
+
+                      </div>
+
+
+                      <div>
+
+                          <h4>
+                              UX/UI Design
+                          </h4>
+
+                          <p>
+
+                              Creating intuitive, engaging,
+                              and user-friendly digital
+                              experiences.
+
+                          </p>
+
+                      </div>
+
+                  </div>
+
+
+
+                  <!-- SERVICE 4 -->
+
+                  <div class="service-row">
+
+                      <div class="service-icon">
+
+                          <i class="bi bi-phone"></i>
+
+                      </div>
+
+
+                      <div>
+
+                          <h4>
+                              Web &amp; Mobile Solutions
+                          </h4>
+
+                          <p>
+
+                              Modern web applications and
+                              mobile apps that drive
+                              business growth.
+
+                          </p>
+
+                      </div>
+
+                  </div>
+
+
+
+                  <!-- SERVICE 5 -->
+
+                  <div class="service-row">
+
+                      <div class="service-icon">
+
+                          <i class="bi bi-ship"></i>
+
+                      </div>
+
+
+                      <div>
+
+                          <h4>
+                              Goods Clearance
+                          </h4>
+
+                          <p>
+
+                              Fast and reliable customs
+                              clearance services to keep
+                              your cargo moving.
+
+                          </p>
+
+                      </div>
+
+                  </div>
+
+
+              </div>
+
+          </div>
+
+      </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       MAP
+  ========================================================= -->
+
+  <section class="location-section">
+
+      <div class="container">
+
+          <div class="map-wrapper">
+
+
+              <iframe
+                  src="https://www.google.com/maps?q=Nigeria&output=embed"
+                  loading="lazy"
+                  allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="HiTECH Nigeria Location">
+              </iframe>
+
+
+              <div class="location-card">
+
+                  <div class="location-icon">
+
+                      <i class="bi bi-geo-alt"></i>
+
+                  </div>
+
+
+                  <div>
+
+                      <h4>
+                          Our Location
+                      </h4>
+
+                      <p>
+                          Nigeria
+                      </p>
+
+                      <span>
+                          Connecting Business.
+                          Powering Innovation.
+                      </span>
+
+                  </div>
+
+              </div>
+
+
+          </div>
+
+      </div>
+
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+
+  <footer class="hitech-home-footer">
+
+      <div class="hitech-home-container">
+
+          <div class="hitech-home-footer-top">
+
+              <span>
+                  HITECH
+              </span>
+
+              <i></i>
+
+              <span>
+                  CONNECTING BUSINESS.
+                  POWERING INNOVATION.
+              </span>
+
+          </div>
+
+
+          <div class="hitech-home-footer-main">
+
+
+              <div class="hitech-home-footer-brand">
+
+                  <img
+                      src="img/HiTECHLOGO2.png"
+                      alt="HiTECH"
+                  >
+
+                  <p>
+                      Connecting businesses, technology and
+                      global opportunities through practical
+                      solutions.
+                  </p>
+
+              </div>
+
+
+              <div class="hitech-home-footer-column">
+
+                  <span>
+                      COMPANY
+                  </span>
+
+                  <a href="index.html">Home</a>
+                  <a href="products.html">Products</a>
+                  <a href="services.html">Services</a>
+                  <a href="about.html">About</a>
+                  <a href="contact.html">Contact</a>
+
+              </div>
+
+
+              <div class="hitech-home-footer-column">
+
+                  <span>
+                      SERVICES
+                  </span>
+
+                  <a href="services.html">
+                      Procurement &amp; Sourcing
+                  </a>
+
+                  <a href="services.html">
+                      Foreign Exchange
+                  </a>
+
+                  <a href="services.html">
+                      Goods Clearance
+                  </a>
+
+                  <a href="services.html">
+                      UX/UI Design
+                  </a>
+
+                  <a href="services.html">
+                      Digital Solutions
+                  </a>
+
+              </div>
+
+
+              <div class="hitech-home-footer-column">
+
+                  <span>
+                      CONNECT
+                  </span>
+
+                  <a href="tel:+2348033481883">
+                      <i class="bi bi-telephone"></i>
+                      +234 803 348 1883
+                  </a>
+
+                  <a
+                      href="https://wa.me/8619881201496"
+                      target="_blank"
+                      rel="noopener"
+                  >
+                      <i class="bi bi-whatsapp"></i>
+                      +86 198 812 01496
+                  </a>
+
+                  <a href="mailto:info@hitechnglimited">
+                      <i class="bi bi-envelope"></i>
+                      info@hitechnglimited
+                  </a>
+
+              </div>
+
+          </div>
+
+
+          <div class="hitech-home-footer-bottom">
+
+              <span>
+                  © 2026 HiTECH. All Rights Reserved.
+              </span>
+
+              <span>
+                  TECHNOLOGY / BUSINESS / OPPORTUNITY
+              </span>
+
+              <span>
+                  HITECH / 001
+              </span>
+
+          </div>
+
+      </div>
+
+  </footer>
+
+
+  <!-- BACK TO TOP -->
+
+  <button
+      type="button"
+      id="hitechHomeBackTop"
+      class="hitech-home-back-top"
+      aria-label="Back to top"
+  >
+      <i class="bi bi-arrow-up"></i>
+  </button>
+
+
+  </div>
+
+
+
+  </body>
+
+  </html>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your JS -->
+  <script src="js/script.js"></script>
+
+  </body>
+  </html>
